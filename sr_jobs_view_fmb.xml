@@ -1,0 +1,1000 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Module version="111020200" xmlns="http://xmlns.oracle.com/Forms">
+   <FormModule Name="SR_JOBS_VIEW" DirtyInfo="true" Title="Application_Template" LanguageDirection="Right To Left" MenuModule="" ConsoleWindow="WINDOW1">
+      <Coordinate CharacterCellWidth="176" DefaultFontScaling="false" CoordinateSystem="Real" CharacterCellHeight="494" RealUnit="Centimeter"/>
+      <Alert Name="DYNAMIC_STOP" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <Alert Name="T_DEBUG" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <Alert Name="GENERAL" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH"/>
+      <Alert Name="STOP_1" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH"/>
+      <Alert Name="STOP_2" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH"/>
+      <Alert Name="STOP_3" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH"/>
+      <Alert Name="CAUTION_1" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH"/>
+      <Alert Name="CAUTION_2" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH"/>
+      <Alert Name="CAUTION_3" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH"/>
+      <Alert Name="NOTE_1" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH"/>
+      <Alert Name="NOTE_2" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH"/>
+      <Alert Name="NOTE_3" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH"/>
+      <AttachedLibrary Name="FUNCTIONS" LibrarySource="File" LibraryLocation="FUNCTIONS"/>
+      <AttachedLibrary Name="APP_UTIL" LibrarySource="File" LibraryLocation="app_util"/>
+      <AttachedLibrary Name="FORM_UTILS" LibrarySource="File" LibraryLocation="FORM_UTILS"/>
+      <AttachedLibrary Name="RUN_REPORT" LibrarySource="File" LibraryLocation="run_report"/>
+      <AttachedLibrary Name="WEBUTIL" LibrarySource="File" LibraryLocation="webutil"/>
+      <Block Name="TITLE" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS">
+         <Item Name="SCREEN_HEADER" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="QUERY_ALLOWED" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="UPDATE_ALLOWED" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="INSERT_ALLOWED" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="DELETE_ALLOWED" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="ENTERANCE_MODE" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="SCREEN_PRE_HEADER" SubclassSubObject="true" DirtyInfo="true"/>
+      </Block>
+      <Block Name="TOOLBAR" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS">
+         <Item Name="BOMGAR" SubclassSubObject="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="IVR" SubclassSubObject="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="COPY" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="PRINT" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="PASTE" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="GO_BUTTON" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="FIND_FORM_NUM" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="KEY-NEXT-ITEM" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="RM_CLIENTS" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="MAIN" SubclassSubObject="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="FIND_FORM_NAME" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="KEY-NEXT-ITEM" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="SEARCH_ALL" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="REPORT_RUN" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="RM_REPORTS_QUEUE" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="FILE_TRANSFER" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="ON_PRIVATE_MENU" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="ON_GENERAL_MENU" SubclassSubObject="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="CASH_TITLE" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="CASH_NUM" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="SCREEN_NUM" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="SCREEN_NAME" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="SYS_DATE" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="USER_NAME" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="PROGRAM_NUM" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="PRIVATE_MENU" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-CUSTOM-ITEM-EVENT" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="GENERAL_MENU" SubclassSubObject="true">
+            <Trigger Name="WHEN-CUSTOM-ITEM-EVENT" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="FIND_FORM_TEXT" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="BACK" SubclassSubObject="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="UP_SEARCH_CLIENT" SubclassSubObject="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="NEXT" SubclassSubObject="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="DOWN_SEARCH_CLIENT" SubclassSubObject="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="CURRENT_NUM" SubclassSubObject="true"/>
+         <Item Name="QUEUE_BUT" SubclassSubObject="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="SUPPORT_PHONE" SubclassSubObject="true"/>
+         <Trigger Name="KEY-CREREC" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="KEY-NXTREC" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="KEY-PRVREC" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="KEY-LISTVAL" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="KEY-DOWN" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="KEY-UP" SubclassSubObject="true" DirtyInfo="true"/>
+      </Block>
+      <Block Name="QUERY" DirtyInfo="true" ScrollbarWidth="318" ScrollbarLength="4763">
+         <Item Name="PROC_BEGIN_DATE" YPosition="1131" XPosition="2782" PromptFontSize="1100" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="YYYY_CAL_PC" Prompt="החל מתאריך" TabPageName="" DirtyInfo="true" DatabaseItem="false" PromptFontSpacing="Normal" Width="2143" PromptAttachmentOffset="158" PromptFontWeight="Medium" PromptAlignOffset="45" CanvasName="MAIN_CV_1" ParentType="29" PromptFontStyle="Plain" PromptFontName="Arial">
+            <Trigger Name="WHEN-MOUSE-DOUBLECLICK" SubclassSubObject="true" DirtyInfo="true"/>
+            <Trigger Name="WHEN-VALIDATE-ITEM" TriggerText="DECLARE&amp;#10;   v_alert  NUMBER;&amp;#10;BEGIN&amp;#10;&amp;#10;if :query.proc_begin_date is not null and :query.proc_end_date is not null then&amp;#10;&#x9;&amp;#10;  if&#x9;:query.proc_begin_date > :query.proc_end_date and error_code = 0 then&amp;#10;&#x9;  &amp;#10;      v_alert := DISPLAY_COMMENT('APP',1064,NULL,NULL,NULL,NULL);&amp;#10;      :query.proc_end_date := null;&amp;#10;      &amp;#10;      :system.message_level:=10;&amp;#10;        raise form_trigger_failure;&amp;#10;      :system.message_level:=0;&amp;#10;      &amp;#10;&#x9;end if;&amp;#10;&#x9;  &amp;#10;end if;&#x9;  &amp;#10;   &amp;#10;   &amp;#10;END;"/>
+         </Item>
+         <Item Name="PROC_END_DATE" MaximumLength="10" YPosition="1105" XPosition="7755" FontWeight="Medium" FontStyle="Outline" DirtyInfo="true" FontSpacing="Normal" Width="2228" FontSize="1100" FontName="Arial" CanvasName="MAIN_CV_1" PromptFontName="Arial" FormatMask="dd/mm/yyyy" Hint="הקש/י תאריך בפורמט DD/MM/YYYY" PromptFontSize="1100" DataType="Date" ItemType="Text Item" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="YYYY_CAL_PC" Prompt="עד תאריך" TabPageName="" PromptFontSpacing="Normal" PromptAttachmentEdge="Start" PromptAttachmentOffset="158" PromptAlign="Start" PromptFontWeight="Medium" PromptForegroundColor="black" PromptAlignOffset="45" ParentType="29" PromptFontStyle="Plain">
+            <Trigger Name="WHEN-MOUSE-DOUBLECLICK" SubclassSubObject="true" DirtyInfo="true"/>
+            <Trigger Name="WHEN-VALIDATE-ITEM" TriggerText="declare&amp;#10;&amp;#10; v_alert number;&amp;#10;begin&amp;#10;if :query.proc_begin_date is not null and :query.proc_end_date is not null then&amp;#10;&#x9;&amp;#10;  if&#x9;:query.proc_begin_date > :query.proc_end_date and error_code = 0 then&amp;#10;&#x9;  &amp;#10;      v_alert := DISPLAY_COMMENT('APP',1064,NULL,NULL,NULL,NULL);&amp;#10;      :query.proc_end_date := null;&amp;#10;   --   go_item('CONTROL_BLK.EXECUTE_DATE_TO');&#x9;  &amp;#10;   &amp;#10;   &amp;#10;      :system.message_level:=10;&amp;#10;        raise form_trigger_failure;&amp;#10;      :system.message_level:=0;&amp;#10;&#x9;end if;&amp;#10;&#x9;  &amp;#10;end if;&#x9;  &amp;#10;end; " DirtyInfo="true"/>
+         </Item>
+         <Item Name="PROCESS_USER" MaximumLength="15" YPosition="1075" XPosition="12211" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="SB_TEXT_ITEM_HEB_PC" Prompt="מפעיל" TabPageName="" DirtyInfo="true" DatabaseItem="false" PromptAttachmentOffset="185" Width="2529" PromptAlignOffset="53" CanvasName="MAIN_CV_1" ParentType="29">
+            <Trigger Name="WHEN-VALIDATE-ITEM" TriggerText="DECLARE&amp;#10;   v_alert  NUMBER;&amp;#10;BEGIN&amp;#10;   IF :query.process_seq IS NOT NULL &amp;#10;   AND :query.process_user IS NOT NULL THEN&amp;#10;      SET_APPLICATION_PROPERTY(CURSOR_STYLE,'DEFAULT');&amp;#10;      v_alert := DISPLAY_COMMENT('APP',360,NULL,'מספר עיבוד','שם משתמש',NULL);&amp;#10;      :query.process_seq := NULL;&amp;#10;   END IF;  &amp;#10;   &amp;#10;   if :QUERY.PROCESS_USER is not null then&amp;#10;   begin&amp;#10;   select t.first_name||' '||t.family_name  family_name &amp;#10;   into :QUERY.PROCESS_USER_DISP&amp;#10;   from rm_users t&amp;#10;   where user_name=:QUERY.PROCESS_USER;&amp;#10;   exception when others then&amp;#10;   &#x9; v_alert:=display_comment('APP',444,null,'לא קיים משתמש בשם זה',null,null);&amp;#10;   &#x9;:QUERY.PROCESS_USER_DISP:=null;&amp;#10;   end;&amp;#10;   end if;&amp;#10;&amp;#10;   &amp;#10;END;"/>
+         </Item>
+         <Item Name="PROCESS_USER_BTN" YPosition="1062" Label="PUSH_BUTTON137" XPosition="14844" DirtyInfo="true" Width="450" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_LOV_PC">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="DECLARE&amp;#10;     v_lov    BOOLEAN;&amp;#10;BEGIN&amp;#10;  IF global.help_pressed != 'Y' THEN&amp;#10;    v_lov := SHOW_LOV('PROCESS_USER_LOV');&amp;#10;  END IF;&amp;#10;END;&amp;#10;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="PROCESS_USER_DISP" YPosition="1075" XPosition="15319" DirtyInfo="true" Width="3000" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISP_ITEM_HEB_COLOR"/>
+         <Item Name="PROCESS_SEQ" MaximumLength="15" YPosition="1059" XPosition="20637" PromptFontSize="1100" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="SB_NUM_INT_PC" Prompt="מספר עיבוד" TabPageName="" DirtyInfo="true" DatabaseItem="false" PromptFontSpacing="Normal" Width="2250" PromptAttachmentOffset="187" PromptFontWeight="Medium" PromptAlignOffset="47" CanvasName="MAIN_CV_1" ParentType="29" PromptFontStyle="Plain" PromptFontName="Arial" Height="517">
+            <Trigger Name="WHEN-VALIDATE-ITEM" TriggerText="DECLARE&amp;#10;   v_alert  NUMBER;&amp;#10;BEGIN&amp;#10;   IF (:query.process_user IS NOT NULL &amp;#10;   OR :query.proc_begin_date IS NOT NULL) &amp;#10;   AND :query.process_seq IS NOT NULL THEN&amp;#10;      SET_APPLICATION_PROPERTY(CURSOR_STYLE,'DEFAULT');&amp;#10;      v_alert := DISPLAY_COMMENT('APP',360,NULL,'מספר עיבוד','תאריך ושם משתמש',NULL);&amp;#10;&#x9;   :query.process_user    := NULL;&amp;#10;     :query.proc_begin_date := NULL;&amp;#10;     :query.proc_end_date   := NULL;&amp;#10;     :query.job_status      := NULL;&amp;#10;     :query.TEMPLATE_SEQ    := NULL;&amp;#10;     :query.TASK_CODE       := NULL;&amp;#10;   END IF;   &amp;#10;END;"/>
+         </Item>
+         <Item Name="CALL_PROC_BEGIN_DATE" YPosition="1109" TabPageName="" XPosition="5136" DirtyInfo="true" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" MouseNavigate="false" ParentName="BUTTON_CALANDER_PC">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="BEGIN&amp;#10; IF global.help_pressed != 'Y' THEN&amp;#10;  IF :system.cursor_item = 'QUERY.PROC_BEGIN_DATE' THEN&amp;#10;   GO_ITEM(:system.cursor_item);&amp;#10;   EXECUTE_TRIGGER('WHEN-MOUSE-DOUBLECLICK');&amp;#10;  ELSE&amp;#10;   GO_ITEM('QUERY.PROC_BEGIN_DATE');&amp;#10;   EXECUTE_TRIGGER('WHEN-MOUSE-DOUBLECLICK');&amp;#10;  END IF;&amp;#10; END IF;&amp;#10;END;"/>
+         </Item>
+         <Item Name="CALL_PROC_END_DATE" YPosition="1109" XPosition="10091" IconFilename="date_icon" Iconic="true" ItemsDisplay="1" FillPattern="transparent" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_CALANDER_PC" FontWeight="Medium" BackColor="metroblue1" FontStyle="Outline" TabPageName="" ForegroundColor="metroblue1" DirtyInfo="true" FontSpacing="Normal" Width="640" FontSize="1100" FontName="Arial" ParentType="29" CanvasName="MAIN_CV_1" Height="513" VisualAttributeName="VA_BUTTON">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="BEGIN&amp;#10; IF global.help_pressed != 'Y' THEN&amp;#10;  IF :system.cursor_item = 'QUERY.PROC_END_DATE' THEN&amp;#10;   GO_ITEM(:system.cursor_item);&amp;#10;   EXECUTE_TRIGGER('WHEN-MOUSE-DOUBLECLICK');&amp;#10;  ELSE&amp;#10;   GO_ITEM('QUERY.PROC_END_DATE');&amp;#10;   EXECUTE_TRIGGER('WHEN-MOUSE-DOUBLECLICK');&amp;#10;  END IF;&amp;#10; END IF;&amp;#10;END;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="QUERY" YPosition="920" XPosition="23171" IconFilename="show" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_LARGE_PC" Label="הצג" TabPageName="" DirtyInfo="true" Width="1910" CanvasName="MAIN_CV_1" ParentType="29">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="declare&amp;#10;&#x9;v_alert number;&amp;#10;BEGIN&amp;#10;  IF global.help_pressed != 'Y' THEN&amp;#10;  &#x9;if :query.process_seq is not null and (&amp;#10;       :query.process_user IS NOT NULL&amp;#10;      OR :query.proc_begin_date IS NOT NULL&amp;#10;      OR :query.proc_end_date IS NOT NULL  &amp;#10;      OR :query.job_status IS NOT NULL&amp;#10;      OR :query.TEMPLATE_SEQ IS NOT NULL&amp;#10;      OR :query.TASK_CODE IS NOT NULL ) then&amp;#10;      &amp;#10;&#x9;   :query.process_user    := NULL;&amp;#10;     :query.proc_begin_date := NULL;&amp;#10;     :query.proc_end_date   := NULL;&amp;#10;     :query.job_status      := NULL;&amp;#10;     :query.TEMPLATE_SEQ    := NULL;&amp;#10;     :query.TASK_CODE       := NULL;&amp;#10;  &#x9;end if;&amp;#10;  &#x9;&amp;#10;    GO_BLOCK('sr_jobs_view');&amp;#10;    EXECUTE_QUERY;&amp;#10;    IF :sr_jobs_view.process_seq IS NULL THEN&amp;#10;    &#x9; v_alert := DISPLAY_COMMENT('APP',50128,NULL,NULL,NULL,NULL);  --142&amp;#10;    &#x9; GO_BLOCK('QUERY');&amp;#10;    END IF;&amp;#10;  END IF;&amp;#10;  &amp;#10;END;"/>
+         </Item>
+         <Item Name="CLEAR_ALL" YPosition="2545" XPosition="23171" IconFilename="clear" Iconic="true" PromptFontSize="1100" Comment="כפתור טקסט צר" ItemsDisplay="1" ItemType="Push Button" Label="" TabPageName="" DirtyInfo="true" DatabaseItem="false" KeyboardNavigable="false" Width="1885" PromptFontWeight="Bold" CanvasName="MAIN_CV_1" PromptFontStyle="Plain" PromptFontName="Arial" VisualAttributeName="VA_BUTTON" Height="700" MouseNavigate="false">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="&amp;#10;&amp;#10;       if :system.current_block &lt;> 'QUERY' then&amp;#10;         go_block('QUERY');&amp;#10;       end if;&amp;#10;       clear_block(no_validate);&amp;#10;       :global.calling_form := null;&amp;#10;       go_item('QUERY.PROC_BEGIN_DATE');  &amp;#10;&amp;#10;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="PROCESS_NAME" Prompt="תוכנית" YPosition="1958" XPosition="2782" DirtyInfo="true" Width="7884" PromptAttachmentOffset="200" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="SB_TEXT_ITEM_HEB_PC"/>
+         <Item Name="JOB_STATUS" Prompt="מצב עיבוד" YPosition="1905" XPosition="13917" DirtyInfo="true" Width="800" PromptAttachmentOffset="200" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="SB_NUM_INT_PC">
+            <Trigger Name="WHEN-VALIDATE-ITEM" TriggerText="DECLARE&amp;#10;&#x9;v_alert NUMBER;&amp;#10;BEGIN&amp;#10;&#x9;IF :query.job_status IS NOT NULL THEN&amp;#10;&#x9;  BEGIN&amp;#10;&#x9;&#x9;  SELECT value_name &amp;#10;&#x9;&#x9;  INTO   :query.job_status_desc&amp;#10;&#x9;&#x9;  FROM   rm_decode_values &amp;#10;&#x9;&#x9;  WHERE  decode_code = 100&amp;#10;&#x9;&#x9;  AND    value_code = :query.job_status;&amp;#10;&#x9;  EXCEPTION&amp;#10;&#x9;  &#x9;WHEN NO_DATA_FOUND THEN&amp;#10;&#x9;  &#x9;  v_alert := DISPLAY_COMMENT('APP',155,NULL,NULL,NULL,NULL);&amp;#10;&#x9;  &#x9;  :query.job_status := NULL;&amp;#10;&#x9;  &#x9;  :query.job_status_desc := NULL;&amp;#10;&#x9;  &#x9;  RAISE FORM_TRIGGER_FAILURE;&amp;#10;&#x9;  END;&amp;#10;&#x9;ELSE&amp;#10;&#x9;&#x9;:query.job_status_desc := NULL;&amp;#10;&#x9;END IF;&amp;#10;END;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="JOB_STATUS_BTN" YPosition="1905" Label="PUSH_BUTTON137" XPosition="14844" DirtyInfo="true" Width="450" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_LOV_PC">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="DECLARE&amp;#10;     v_lov    BOOLEAN;&amp;#10;BEGIN&amp;#10;  IF global.help_pressed != 'Y' THEN&amp;#10;    v_lov := SHOW_LOV('JOB_STATUS_LOV');&amp;#10;  END IF;&amp;#10;END;&amp;#10;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="JOB_STATUS_DESC" YPosition="1905" XPosition="15319" DirtyInfo="true" Width="4472" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISP_ITEM_HEB_COLOR"/>
+         <Item Name="TASK_CODE" YPosition="2800" XPosition="2655" ValidateFromList="true" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="SB_NUM_INT_PC" Prompt="מטלה" DirtyInfo="true" PromptAttachmentOffset="200" Width="820" CanvasName="MAIN_CV_1" LovName="TASK_LOV" ParentType="29" Height="524">
+            <Trigger Name="WHEN-VALIDATE-ITEM" TriggerText="DECLARE&amp;#10;&#x9;v_alert NUMBER;&amp;#10;BEGIN&amp;#10;&#x9;IF :query.job_status IS NOT NULL THEN&amp;#10;&#x9;  BEGIN&amp;#10;&#x9;&#x9;  SELECT value_name &amp;#10;&#x9;&#x9;  INTO   :query.job_status_desc&amp;#10;&#x9;&#x9;  FROM   rm_decode_values &amp;#10;&#x9;&#x9;  WHERE  decode_code = 100&amp;#10;&#x9;&#x9;  AND    value_code = :query.job_status;&amp;#10;&#x9;  EXCEPTION&amp;#10;&#x9;  &#x9;WHEN NO_DATA_FOUND THEN&amp;#10;&#x9;  &#x9;  v_alert := DISPLAY_COMMENT('APP',155,NULL,NULL,NULL,NULL);&amp;#10;&#x9;  &#x9;  :query.job_status := NULL;&amp;#10;&#x9;  &#x9;  :query.job_status_desc := NULL;&amp;#10;&#x9;  &#x9;  RAISE FORM_TRIGGER_FAILURE;&amp;#10;&#x9;  END;&amp;#10;&#x9;ELSE&amp;#10;&#x9;&#x9;:query.job_status_desc := NULL;&amp;#10;&#x9;END IF;&amp;#10;END;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="TASK_CODE_BTN" YPosition="2774" Label="PUSH_BUTTON137" XPosition="3602" DirtyInfo="true" Width="450" ParentType="29" CanvasName="MAIN_CV_1" Height="537" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_LOV_PC">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="DECLARE&amp;#10;     v_lov    BOOLEAN;&amp;#10;BEGIN&amp;#10;  IF global.help_pressed != 'Y' THEN&amp;#10;    v_lov := SHOW_LOV('TASK_LOV');&amp;#10;  END IF;&amp;#10;END;&amp;#10;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="TASK_CODE_DESC" MaximumLength="200" YPosition="2774" XPosition="4077" DirtyInfo="true" Width="6588" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISP_ITEM_HEB_COLOR"/>
+         <Item Name="TEMPLATE_SEQ" YPosition="2721" XPosition="13230" ValidateFromList="true" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="SB_NUM_INT_PC" Prompt="תבנית" DirtyInfo="true" PromptAttachmentOffset="200" Width="1450" CanvasName="MAIN_CV_1" LovName="TEMPLATE_LOV" ParentType="29">
+            <Trigger Name="WHEN-VALIDATE-ITEM" TriggerText="DECLARE&amp;#10;&#x9;v_alert NUMBER;&amp;#10;BEGIN&amp;#10;&#x9;IF :query.job_status IS NOT NULL THEN&amp;#10;&#x9;  BEGIN&amp;#10;&#x9;&#x9;  SELECT value_name &amp;#10;&#x9;&#x9;  INTO   :query.job_status_desc&amp;#10;&#x9;&#x9;  FROM   rm_decode_values &amp;#10;&#x9;&#x9;  WHERE  decode_code = 100&amp;#10;&#x9;&#x9;  AND    value_code = :query.job_status;&amp;#10;&#x9;  EXCEPTION&amp;#10;&#x9;  &#x9;WHEN NO_DATA_FOUND THEN&amp;#10;&#x9;  &#x9;  v_alert := DISPLAY_COMMENT('APP',155,NULL,NULL,NULL,NULL);&amp;#10;&#x9;  &#x9;  :query.job_status := NULL;&amp;#10;&#x9;  &#x9;  :query.job_status_desc := NULL;&amp;#10;&#x9;  &#x9;  RAISE FORM_TRIGGER_FAILURE;&amp;#10;&#x9;  END;&amp;#10;&#x9;ELSE&amp;#10;&#x9;&#x9;:query.job_status_desc := NULL;&amp;#10;&#x9;END IF;&amp;#10;END;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="TEMPLATE_TYPE" DirtyInfo="true" Width="2381" Height="476"/>
+         <Item Name="TEMPLATE_BTN" YPosition="2721" Label="PUSH_BUTTON137" XPosition="14856" DirtyInfo="true" Width="450" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_LOV_PC">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="DECLARE&amp;#10;     v_lov    BOOLEAN;&amp;#10;BEGIN&amp;#10;  IF global.help_pressed != 'Y' THEN&amp;#10;    v_lov := SHOW_LOV('TEMPLATE_LOV');&amp;#10;  END IF;&amp;#10;END;&amp;#10;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="TEMPLATE_DESC" MaximumLength="200" YPosition="2721" XPosition="15333" DirtyInfo="true" Width="7620" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISP_ITEM_HEB_COLOR"/>
+         <Item Name="REFRESH_TIME" YPosition="12779" XPosition="7382" ListElementCount="5" PromptFontSize="1100" ItemType="List Item" Prompt="לרענן בשניות" TabPageName="" DirtyInfo="true" DatabaseItem="false" PromptAttachmentOffset="200" Width="3175" PromptAlign="Center" PromptForegroundColor="metroblue1" PromptFontWeight="Bold" CanvasName="MAIN_CV_1" Height="600">
+            <ListItemElement Index="1" Name="5" Value="5"/>
+            <ListItemElement Index="2" Name="10" Value="10"/>
+            <ListItemElement Index="3" Name="20" Value="20"/>
+            <ListItemElement Index="4" Name="60" Value="60"/>
+            <ListItemElement Index="5" Name="120" Value="120"/>
+            <Trigger Name="WHEN-LIST-CHANGED" TriggerText="DECLARE&amp;#10;   one_second NUMBER := 1000;&amp;#10;   timer_id   TIMER;&amp;#10;BEGIN&amp;#10;   IF NOT ID_NULL(FIND_TIMER('REFRESH_TIMER')) THEN&amp;#10;     DELETE_TIMER('REFRESH_TIMER');&amp;#10;   END IF;    &amp;#10;   if :QUERY.REFRESH_TIME is not null then &amp;#10;     timer_id := CREATE_TIMER('REFRESH_TIMER',(one_second*:QUERY.REFRESH_TIME),NO_REPEAT);&amp;#10;   end if;&amp;#10;END;&amp;#10;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="STEP_NUM" YPosition="1904" XPosition="22131" Justification="Right" ValidateFromList="true" LowestAllowedValue="0" Bevel="None" DirtyInfo="true" Width="820" CanvasName="MAIN_CV_1" PromptFontName="Arial" Height="524" PromptFontSize="1100" Comment="שדה מספרי שלם" DataType="Integer" ItemType="Text Item" Prompt="מספר שלב" InitializeKeyboardDirection="Roman" PromptAttachmentEdge="Start" PromptFontSpacing="Normal" PromptAttachmentOffset="306" PromptAlign="Start" PromptForegroundColor="black" PromptAlignOffset="0" PromptFontWeight="Medium" LovName="ALL_STEP_NUM" PromptFontStyle="Plain" VisualAttributeName="VA_ITEM"/>
+         <Item Name="STEP_NUM_BTN" YPosition="1904" Label="PUSH_BUTTON137" XPosition="23262" DirtyInfo="true" Width="450" ParentType="29" CanvasName="MAIN_CV_1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_LOV_PC">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="DECLARE&amp;#10;     v_lov    BOOLEAN;&amp;#10;BEGIN&amp;#10;  IF global.help_pressed != 'Y' THEN&amp;#10;  &#x9;if :QUERY.TASK_CODE is null then &amp;#10;        v_lov := SHOW_LOV('ALL_STEP_NUM');&amp;#10;  &#x9;END IF;&amp;#10;  if :QUERY.TASK_CODE is not null then &amp;#10;        v_lov := SHOW_LOV('LOV_STEP_NUM');&amp;#10;  END IF;&amp;#10;  end if;&amp;#10;END;&amp;#10;" DirtyInfo="true"/>
+         </Item>
+      </Block>
+      <Block Name="SR_JOBS_VIEW" UpdateAllowed="false" RecordVisualAttributeGroupName="" ScrollbarTabPageName="" Alias="rm_processes" QueryDataSourceName="SELECT &amp;#10;       PROCESS_SEQ,&amp;#10;       PROCESS_NAME,&amp;#10;       STEP_NUM,&amp;#10;       process_user STAMP_USER,&amp;#10;       process_stamp_action stamp_action,&amp;#10;       JOB_NUM,&amp;#10;       JOB_STATUS,&amp;#10;       proc_begin_date PROCESS_START,&amp;#10;       proc_end_date PROCESS_END,&amp;#10;       TASK_SEQ,&amp;#10;       TEMPLATE_NUM,&amp;#10;       process_cdate STAMP_CDATE,&amp;#10;       jv.job_queue,&amp;#10;       jv.job_run,&amp;#10;       jv.sid,&amp;#10;       jv.broken,&amp;#10;       DECODE(jv.failures, 0, null, failures) failures,   &amp;#10;       jv.next_date,&amp;#10;       jv.this_date,&amp;#10;       jv.last_date&amp;#10;  FROM sr_jobs_view jv " DMLDataName="SELECT &amp;#10;       PROCESS_SEQ,&amp;#10;       PROCESS_NAME,&amp;#10;       STEP_NUM,&amp;#10;       process_user STAMP_USER,&amp;#10;       process_stamp_action stamp_action,&amp;#10;       JOB_NUM,&amp;#10;       JOB_STATUS,&amp;#10;       proc_begin_date PROCESS_START,&amp;#10;       proc_end_date PROCESS_END,&amp;#10;       TASK_SEQ,&amp;#10;       TEMPLATE_NUM,&amp;#10;       process_cdate STAMP_CDATE,&amp;#10;       jv.job_queue,&amp;#10;       jv.job_run,&amp;#10;       jv.sid,&amp;#10;       jv.broken,&amp;#10;       DECODE(jv.failures, 0, null, failures) failures,   &amp;#10;       jv.next_date,&amp;#10;       jv.this_date,&amp;#10;       jv.last_date&amp;#10;  FROM sr_jobs_view jv " DMLDataType="None" RecordsDisplayCount="8" InsertAllowed="false" QueryDataSourceType="FROM clause query" ScrollbarYPosition="5632" ShowScrollbar="true" DeleteAllowed="false" KeyMode="Non-Updateable" DirtyInfo="true" ScrollbarCanvasName="MAIN_CV_1" ScrollbarWidth="413" ScrollbarXPosition="884" OrderByClause="process_start DESC" EnforcedPrimaryKey="true" ScrollbarLength="5459">
+         <Item Name="INDICATOR" RecordVisualAttributeGroupName="" YPosition="5684" XPosition="1349" ItemType="Display Item" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="NUM_INT_PC" TabPageName="" DirtyInfo="true" DatabaseItem="false" Width="300" CanvasName="MAIN_CV_1" ParentType="29"/>
+         <Item Name="PROCESS_SEQ" RecordVisualAttributeGroupName="VA_CURRENT_RECORD" MaximumLength="15" YPosition="5684" XPosition="1747" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="NUM_INT_PC" Prompt="מספר" TabPageName="" PromptJustification="Start" PromptDisplayStyle="First Record" DirtyInfo="true" PromptFontSpacing="Normal" Width="2000" PromptAttachmentOffset="131" PromptAlign="Center" PromptFontWeight="Medium" PrimaryKey="true" CanvasName="MAIN_CV_1" ParentType="29" PromptFontStyle="Plain" Required="true"/>
+         <Item Name="PROCESS_NAME" RecordVisualAttributeGroupName="VA_CURRENT_RECORD" MaximumLength="100" YPosition="5684" XPosition="3747" ItemsDisplay="0" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_ITEM_HEB_PC" Prompt="עיבוד" TabPageName="" PromptJustification="Start" PromptDisplayStyle="First Record" DirtyInfo="true" PromptFontSpacing="Normal" Width="3470" PromptAttachmentOffset="131" PromptAlign="Center" PromptFontWeight="Medium" CanvasName="MAIN_CV_1" ParentType="29" PromptFontStyle="Plain"/>
+         <Item Name="STEP_NUM" MaximumLength="4" RecordVisualAttributeGroupName="VA_CURRENT_RECORD" YPosition="5684" XPosition="7217" Justification="Center" ItemsDisplay="0" LowestAllowedValue="0" DirtyInfo="true" Width="999" CanvasName="MAIN_CV_1" PromptFontName="Arial" PromptFontSize="1100" ItemType="Text Item" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="NUM_INT_PC" Prompt="מספר שלב" TabPageName="" PromptDisplayStyle="First Record" PromptJustification="Start" PromptFontSpacing="Normal" PromptAttachmentOffset="131" PromptAlign="Center" PromptAlignOffset="0" PromptFontWeight="Medium" ParentType="29" PromptFontStyle="Plain"/>
+         <Item Name="STAMP_USER_DISP" MaximumLength="100" YPosition="1339" XPosition="4439" ItemsDisplay="0" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_ITEM_HEB_PC" Prompt="מפעיל" TabPageName="EXTRA_TAB" PromptJustification="Start" PromptDisplayStyle="First Record" DirtyInfo="true" DatabaseItem="false" Width="3175" PromptAttachmentOffset="184" PromptAlign="Center" CanvasName="TAB_CV" ParentType="29" Visible="true" Required="true"/>
+         <Item Name="STAMP_USER" RecordVisualAttributeGroupName="VA_CURRENT_RECORD" MaximumLength="40" YPosition="5684" XPosition="8216" ItemsDisplay="0" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_ITEM_HEB_PC" Prompt="מפעיל" TabPageName="" PromptJustification="Start" PromptDisplayStyle="First Record" DirtyInfo="true" Width="3175" PromptAttachmentOffset="131" PromptAlign="Center" CanvasName="MAIN_CV_1" ParentType="29" Required="true"/>
+         <Item Name="JOB_NUM" MaximumLength="9" YPosition="4892" XPosition="5821" DataType="Number" ItemsDisplay="0" DistanceBetweenRecords="3331" ItemType="Text Item" Prompt="Job Num" TabPageName="" PromptDisplayStyle="First Record" PromptAttachmentEdge="Top" Width="1588" PromptAttachmentOffset="80" PromptAlignOffset="113" PrimaryKey="true" CanvasName="" Height="475"/>
+         <Item Name="JOB_STATUS" MaximumLength="5" YPosition="4642" XPosition="11684" ItemsDisplay="0" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="NUM_INT_PC" Prompt="מצב&amp;#10;הג'וב" TabPageName="" PromptJustification="Start" PromptDisplayStyle="First Record" DirtyInfo="true" PromptFontSpacing="Normal" Width="750" PromptAttachmentOffset="-148" PromptFontWeight="Medium" PromptAlignOffset="-106" CanvasName="" ParentType="29" PromptFontStyle="Plain"/>
+         <Item Name="JOB_DESC" RecordVisualAttributeGroupName="VA_CURRENT_RECORD" MaximumLength="80" YPosition="5684" XPosition="11391" PromptFontSize="1100" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_ITEM_HEB_PC" Prompt="מצב עיבוד" TabPageName="" DirtyInfo="true" DatabaseItem="false" PromptFontSpacing="Normal" Width="3232" PromptAttachmentOffset="184" PromptAlign="Center" PromptFontWeight="Medium" PromptAlignOffset="-318" CanvasName="MAIN_CV_1" ParentType="29" PromptFontStyle="Plain" PromptFontName="Arial"/>
+         <Item Name="PROCESS_START" MaximumLength="20" YPosition="1339" XPosition="0" DataType="Datetime" ItemsDisplay="0" ItemType="Text Item" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_DATE_PC" Prompt="תאריך יצירה" TabPageName="EXTRA_TAB" PromptJustification="Start" PromptDisplayStyle="First Record" DirtyInfo="true" PromptAttachmentEdge="Top" Width="3439" PromptAttachmentOffset="184" PromptAlign="Center" PromptAlignOffset="0" CanvasName="TAB_CV" ParentType="29" Required="true" FormatMask="HH24:MI  DD/MM/YYYY"/>
+         <Item Name="START_DATE" MaximumLength="20" YPosition="1339" XPosition="0" ItemsDisplay="0" DatabaseItem="false" DirtyInfo="true" Width="3439" CanvasName="TAB_CV" FormatMask="HH24:MI  DD/MM/YYYY" Required="true" DataType="Datetime" ItemType="Text Item" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_DATE_PC" Prompt="התחיל" TabPageName="DETAILS_TAB" PromptDisplayStyle="First Record" PromptJustification="Start" PromptAttachmentEdge="Top" PromptAttachmentOffset="184" PromptAlign="Center" PromptAlignOffset="0" ParentType="29"/>
+         <Item Name="PROCESS_END" MaximumLength="20" YPosition="1339" XPosition="3465" ItemsDisplay="0" ItemType="Text Item" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_DATE_PC" Prompt="הסתיים" TabPageName="DETAILS_TAB" PromptJustification="Start" PromptDisplayStyle="First Record" DirtyInfo="true" PromptAttachmentEdge="Top" Width="3559" PromptAttachmentOffset="184" PromptAlign="Center" PromptAlignOffset="0" CanvasName="TAB_CV" ParentType="29" Height="632" FormatMask="HH24:MI  DD/MM/YYYY"/>
+         <Item Name="JOB_QUEUE" MaximumLength="20" YPosition="1531" XPosition="15453" DataType="Number" ItemsDisplay="0" DistanceBetweenRecords="3330" ItemType="Text Item" Prompt="Job Queue" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" DatabaseItem="true" PromptAttachmentEdge="Top" Width="1745" PromptAttachmentOffset="80" ColumnName="JOB_QUEUE" PromptAlignOffset="188" CanvasName="" Height="475"/>
+         <Item Name="SHOW_BROKEN" RecordVisualAttributeGroupName="VA_CURR_RECORD_SPECIAL_ITEM" YPosition="1339" XPosition="7051" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISPLAY_SPECIAL_CODE" Prompt="מוקפא" TabPageName="DETAILS_TAB" DirtyInfo="true" DatabaseItem="false" PromptAttachmentOffset="184" Width="1104" PromptAlign="Center" CanvasName="TAB_CV" ParentType="29"/>
+         <Item Name="FAILURES" RecordVisualAttributeGroupName="VA_CURR_RECORD_RED_ITEM" MaximumLength="4" YPosition="1339" XPosition="8182" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISPLAY_ACTION_CODE" Prompt="נכשל" TabPageName="DETAILS_TAB" PromptDisplayStyle="First Record" DirtyInfo="true" DatabaseItem="true" PromptFontSpacing="Normal" Width="2000" ColumnName="FAILURES" PromptAttachmentOffset="184" PromptAlign="Center" PromptFontWeight="Demilight" CanvasName="TAB_CV" ParentType="29" PromptFontStyle="Plain"/>
+         <Item Name="BROKEN" MaximumLength="1" DirtyInfo="true" DatabaseItem="true" Width="1588" ColumnName="BROKEN" Height="476"/>
+         <Item Name="NEXT_DATE" MaximumLength="11" YPosition="3913" XPosition="11591" DataType="Datetime" ItemsDisplay="0" DistanceBetweenRecords="3332" ItemType="Text Item" Prompt="Next Date" TabPageName="" PromptJustification="Left" PromptDisplayStyle="First Record" DirtyInfo="true" DatabaseItem="true" PromptAttachmentEdge="Top" Width="1905" PromptAttachmentOffset="159" ColumnName="NEXT_DATE" CanvasName="" Height="476" FormatMask="dd/mm/yyyy hh24:mi:ss"/>
+         <Item Name="THIS_DATE" MaximumLength="11" YPosition="4389" XPosition="2541" DataType="Datetime" ItemsDisplay="0" DistanceBetweenRecords="3332" ItemType="Text Item" Prompt="This Date" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" DatabaseItem="true" PromptAttachmentEdge="Top" Width="1905" PromptAttachmentOffset="159" ColumnName="THIS_DATE" CanvasName="" Height="476" FormatMask="dd/mm/yyyy hh24:mi:ss"/>
+         <Item Name="LAST_DATE" MaximumLength="11" YPosition="4389" XPosition="11591" DataType="Datetime" ItemsDisplay="0" DistanceBetweenRecords="3332" ItemType="Text Item" Prompt="Last Date" TabPageName="" PromptJustification="Left" PromptDisplayStyle="First Record" DirtyInfo="true" DatabaseItem="true" PromptAttachmentEdge="Top" Width="1905" PromptAttachmentOffset="159" ColumnName="LAST_DATE" CanvasName="" Height="476" FormatMask="dd/mm/yyyy hh24:mi:ss"/>
+         <Item Name="JOB_RUN" MaximumLength="40" YPosition="4865" XPosition="2541" DataType="Number" ItemsDisplay="0" DistanceBetweenRecords="3332" ItemType="Text Item" Prompt="Job Run" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" DatabaseItem="false" PromptAttachmentEdge="Top" Width="1746" PromptAttachmentOffset="-184" ColumnName="" PromptAlignOffset="1244" CanvasName="" Height="476"/>
+         <Item Name="JOB_RUNNING_NOW" MaximumLength="40" YPosition="4865" XPosition="2541" DataType="Number" ItemsDisplay="0" DistanceBetweenRecords="3332" ItemType="Text Item" Prompt="Job Run" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" DatabaseItem="true" PromptAttachmentEdge="Top" Width="1746" PromptAttachmentOffset="-184" ColumnName="job_run" PromptAlignOffset="1244" CanvasName="" Height="476"/>
+         <Item Name="JOB_TYPE" MaximumLength="100" DirtyInfo="true" DatabaseItem="false" Width="3175" Height="556"/>
+         <Item Name="INTERVAL_TIME" MaximumLength="500" DirtyInfo="true" DatabaseItem="false" Width="3175" Height="556"/>
+         <Item Name="TASK_SEQ" YPosition="1339" XPosition="3439" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_ITEM_HEB_PC" Prompt="Task" TabPageName="EXTRA_TAB" DirtyInfo="true" PromptAttachmentOffset="184" Width="1000" CanvasName="TAB_CV" ParentType="29"/>
+         <Item Name="TEMPLATE_NUM" DirtyInfo="true" Width="2381" Height="476"/>
+         <Item Name="STAMP_CDATE" RecordVisualAttributeGroupName="VA_CURRENT_RECORD" MaximumLength="20" YPosition="1286" XPosition="0" ItemsDisplay="0" DistanceBetweenRecords="50" DirtyInfo="true" Width="3439" CanvasName="TAB_CV" Required="true" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISP_DATE_PC" Prompt="שעת הרצה" TabPageName="SCHEDULER_TAB" PromptDisplayStyle="First Record" PromptJustification="Center" InitializeKeyboardDirection="Roman" PromptAttachmentEdge="Top" PromptAttachmentOffset="184" PromptAlign="Center" PromptForegroundColor="white" PromptFontWeight="Medium" ParentType="29" LanguageDirection="Left To Right" VisualAttributeName="VA_ITEM"/>
+         <Item Name="START_HOUR" RecordVisualAttributeGroupName="VA_CURRENT_RECORD" MaximumLength="20" YPosition="1286" XPosition="3518" ItemsDisplay="0" DistanceBetweenRecords="50" DirtyInfo="true" DatabaseItem="false" Width="3439" CanvasName="TAB_CV" Required="true" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISP_DATE_PC" Prompt="כניסה לתור" TabPageName="SCHEDULER_TAB" PromptDisplayStyle="First Record" PromptJustification="Center" InitializeKeyboardDirection="Roman" PromptAttachmentEdge="Top" PromptAttachmentOffset="184" PromptAlign="Center" PromptForegroundColor="white" PromptFontWeight="Medium" ParentType="29" LanguageDirection="Left To Right" VisualAttributeName="VA_ITEM"/>
+         <Item Name="CHANGE_BY_USER_YN" RecordVisualAttributeGroupName="VA_CURRENT_RECORD" YPosition="1455" XPosition="8986" ItemsDisplay="0" DistanceBetweenRecords="250" DirtyInfo="true" DatabaseItem="false" Width="400" CanvasName="TAB_CV" Height="400" CheckBoxOtherValues="Unchecked" UncheckedValue="N" CheckedValue="Y" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISP_CHECK_PC" Prompt="שונה ע&quot;י&amp;#10; המשתמש" TabPageName="SCHEDULER_TAB" PromptDisplayStyle="First Record" PromptJustification="Center" PromptAttachmentEdge="Top" PromptAttachmentOffset="184" PromptAlign="Center" PromptForegroundColor="white" PromptAlignOffset="-53" PromptFontWeight="Medium" ParentType="29"/>
+         <Item Name="PRIORITY" RecordVisualAttributeGroupName="VA_CURRENT_RECORD" YPosition="1286" XPosition="7029" ItemsDisplay="0" DistanceBetweenRecords="50" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISP_NUM_INT_PC" Prompt="עדיפות" TabPageName="SCHEDULER_TAB" PromptJustification="Center" PromptDisplayStyle="First Record" DirtyInfo="true" DatabaseItem="false" PromptAttachmentEdge="Top" Width="1000" PromptAttachmentOffset="184" PromptAlign="Center" PromptFontWeight="Medium" PromptForegroundColor="white" CanvasName="TAB_CV" ParentType="29" VisualAttributeName="VA_ITEM"/>
+         <Item Name="RELEASE" YPosition="11829" XPosition="7307" IconFilename="free_process" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_SMALL_TEXT_PC" Label="שחרור" TabPageName="" DirtyInfo="true" Width="1220" CanvasName="MAIN_CV_1" ParentType="29" Visible="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="/* Send To A Proc. That Release The Job */&amp;#10;DECLARE&amp;#10;   v_alert NUMBER;&amp;#10;BEGIN&amp;#10;   if :sr_jobs_view.PROCESS_SEQ is not null then    &amp;#10;    begin   &amp;#10;&#x9;&#x9;   sr_jobs_pkg.broken_job(:sr_jobs_view.job_queue,FALSE);&amp;#10;&#x9;&#x9;   SET_APPLICATION_PROPERTY(CURSOR_STYLE,'DEFAULT');&amp;#10;&#x9;&#x9;   v_alert := DISPLAY_COMMENT('APP',359,NULL,'שוחרר',NULL,NULL);&amp;#10;&#x9;&#x9;   EXECUTE_QUERY;&amp;#10;&#x9;&#x9;   GO_RECORD(:parameter.current_rec);&amp;#10;&#x9;&#x9;   :parameter.current_rec := GET_BLOCK_PROPERTY('sr_jobs_view',CURRENT_RECORD);&#x9;&#x9;   &amp;#10;EXCEPTION&amp;#10;&amp;#10;   WHEN OTHERS THEN&amp;#10;   v_alert := DISPLAY_COMMENT('APP',444,NULL,SQLERRM ||chr(10) || ' שחרור הקפאה נכשל, יש לפנות לתמיכה ',NULL,NULL);&amp;#10;END;&#x9;     &#x9;&#x9;&amp;#10;&#x9; end if;&#x9;&amp;#10;END;"/>
+         </Item>
+         <Item Name="BROKEN_BUTTON" YPosition="11829" XPosition="5822" IconFilename="freeze_process" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_SMALL_TEXT_PC" Label="הקפאה" TabPageName="" DirtyInfo="true" Width="1220" CanvasName="MAIN_CV_1" ParentType="29" Visible="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="/* Send To A Proc. That Broke The Job */&amp;#10;DECLARE&amp;#10;   v_alert NUMBER;&amp;#10;BEGIN&amp;#10;   :parameter.current_rec := GET_BLOCK_PROPERTY('sr_jobs_view',CURRENT_RECORD);&amp;#10;   sr_jobs_pkg.broken_job(:sr_jobs_view.job_queue,TRUE);&amp;#10;   SET_APPLICATION_PROPERTY(CURSOR_STYLE,'DEFAULT');&amp;#10;   v_alert := DISPLAY_COMMENT('APP',359,NULL,'הוקפא',NULL,NULL);&amp;#10;   EXECUTE_QUERY;&amp;#10;   GO_RECORD(:parameter.current_rec);&amp;#10;EXCEPTION&amp;#10;   WHEN OTHERS THEN&amp;#10;   v_alert := DISPLAY_COMMENT('APP',444,NULL,SQLERRM ||chr(10) || ' הקפאת עיבוד נכשלה, יש לפנות לתמיכה ',NULL,NULL);&amp;#10;END;"/>
+         </Item>
+         <Item Name="REMOVE" YPosition="11829" XPosition="4337" IconFilename="remove_process" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_SMALL_TEXT_PC" Label="הסרה" TabPageName="" DirtyInfo="true" Width="1220" CanvasName="MAIN_CV_1" ParentType="29">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText=" /* Get Job Num And Remove From Queue */&amp;#10;/* Update Job Status In &quot;rm_processes&quot; */&amp;#10;DECLARE&amp;#10;   v_alert NUMBER;&amp;#10;   l_dummy varchar2(2000);&amp;#10;BEGIN&amp;#10;   :parameter.current_rec := GET_BLOCK_PROPERTY('sr_jobs_view',CURRENT_RECORD);&amp;#10;&amp;#10;   sr_jobs_pkg.remove_job(:sr_jobs_view.job_queue);&amp;#10;   l_dummy := DBA_PKG.KILL_RUNNING_JOB(:sr_jobs_view.job_queue,:SR_JOBS_VIEW.PROCESS_SEQ);&amp;#10;  &amp;#10;   UPDATE rm_processes&amp;#10;   SET job_status = 7,PROCESS_END=sysdate&amp;#10;   WHERE process_seq = :sr_jobs_view.process_seq;&amp;#10;   COMMIT;&amp;#10;   &amp;#10;   SET_APPLICATION_PROPERTY(CURSOR_STYLE,'DEFAULT');&amp;#10;   v_alert := DISPLAY_COMMENT('APP',359,NULL,'הוסר',NULL,NULL);&amp;#10;   EXECUTE_QUERY;&amp;#10;   GO_RECORD(:parameter.current_rec);&amp;#10;EXCEPTION&amp;#10;   WHEN NO_DATA_FOUND THEN&amp;#10;     NULL;&amp;#10;   WHEN OTHERS THEN&amp;#10;   v_alert := DISPLAY_COMMENT('APP',444,NULL,SQLERRM ||chr(10) || ' הסרת עיבוד נכשלה, יש לפנות לתמיכה ',NULL,NULL);&amp;#10;END;"/>
+         </Item>
+         <Item Name="PROCESS_MESSAGE" YPosition="11829" XPosition="17108" IconFilename="messages_for_reports" Iconic="false" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_SMALL_TEXT_PC" BackColor="metrogray1" FontWeight="Bold" Label="הודעות לעיבוד" TabPageName="" FontStyle="Plain" DirtyInfo="true" FontSpacing="Normal" Width="2536" FontSize="1100" FontName="Arial" ParentType="29" CanvasName="MAIN_CV_1">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="BEGIN&amp;#10;   IF :sr_jobs_view.process_seq IS NOT NULL THEN&amp;#10;      :global.process_seq := :sr_jobs_view.process_seq;&amp;#10;   ELSE&amp;#10;      :global.process_seq := NULL;&amp;#10;   END IF;&amp;#10;   CALL_FORM('sr_batch_log');&amp;#10;END;"/>
+         </Item>
+         <Item Name="PARAMETERS" YPosition="11829" XPosition="13957" IconFilename="parameters" Iconic="false" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_SMALL_TEXT_PC" BackColor="metrogray1" FontWeight="Bold" Label="פרמטרים לעיבוד" TabPageName="" FontStyle="Plain" DirtyInfo="true" FontSpacing="Normal" Width="3014" FontSize="1100" FontName="Arial" ParentType="29" CanvasName="MAIN_CV_1">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="BEGIN&amp;#10;   IF :sr_jobs_view.process_seq IS NOT NULL THEN&amp;#10;   &#x9;  :parameter.current_rec := GET_BLOCK_PROPERTY('sr_jobs_view',CURRENT_RECORD);   &amp;#10;      GO_Block('RM_PROCESS_PARAM');&amp;#10;      Execute_Query;&amp;#10;   END IF;&amp;#10;END;"/>
+         </Item>
+         <Item Name="SCHEDULER" YPosition="12725" XPosition="11099" IconFilename="parameters" Iconic="false" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_SMALL_TEXT_PC" BackColor="metrogray1" FontWeight="Bold" Label="עדכון שעת כניסה לתור" TabPageName="" FontStyle="Plain" DirtyInfo="true" FontSpacing="Normal" Width="4088" FontSize="1100" FontName="Arial" ParentType="29" CanvasName="MAIN_CV_1">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="BEGIN&amp;#10;   IF :sr_jobs_view.process_seq IS NOT NULL THEN&amp;#10;   &#x9;  :parameter.current_rec := GET_BLOCK_PROPERTY('sr_jobs_view',CURRENT_RECORD);   &amp;#10;      GO_Block('RM_PROCESS_PARAM');&amp;#10;      Execute_Query;&amp;#10;   END IF;&amp;#10;END;"/>
+         </Item>
+         <Item Name="PARAM_ENFORCMENT" YPosition="11829" XPosition="19952" Iconic="false" ItemsDisplay="1" ItemType="Push Button" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_SMALL_TEXT_PC" BackColor="metrogray1" FontWeight="Bold" Label="פרמטרים לאיתור" TabPageName="" FontStyle="Plain" DirtyInfo="true" Width="3307" ParentType="29" CanvasName="MAIN_CV_1" VisualAttributeName="VA_BUTTON" Height="640">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText=":global.process_seq := :SR_JOBS_VIEW.process_seq;&amp;#10;if :SR_JOBS_VIEW.TASK_SEQ in (340,341) then&amp;#10;  CALL_FORM('fr_check_potential');&amp;#10;else&amp;#10;  CALL_FORM('RM_POTENTIAL_DEFINITION');&amp;#10;end if;&#x9;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="EXIT" YPosition="11829" XPosition="23257" IconFilename="exit" Iconic="false" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_SMALL_TEXT_PC" BackColor="metrogray1" FontWeight="Bold" Label="יציאה" TabPageName="" FontStyle="Plain" DirtyInfo="true" FontSpacing="Normal" Width="1490" FontSize="1100" FontName="Arial" ParentType="29" CanvasName="MAIN_CV_1">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="BEGIN&amp;#10;  IF global.help_pressed != 'Y' THEN&amp;#10;     :global.process_seq := null;&amp;#10;     EXIT_FORM;&amp;#10;  END IF;&amp;#10;END;"/>
+         </Item>
+         <Item Name="RESULTS" YPosition="11829" XPosition="11099" Iconic="false" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_SMALL_TEXT_PC" BackColor="metrogray1" FontWeight="Bold" Label="תוצאות לעיבוד" FontStyle="Plain" DirtyInfo="true" FontSpacing="Normal" Width="2672" FontSize="1100" FontName="Arial" CanvasName="MAIN_CV_1" ParentType="29">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="DECLARE&amp;#10;&#x9;v_activity_code sr_log_actions.activity_code%TYPE;&amp;#10;&#x9;v_file_name  RM_ACTIVITY_VERSIONS.file_name%TYPE;&amp;#10;BEGIN&amp;#10;&#x9;IF NVL(:sr_jobs_view.process_seq,0) &lt;> 0 THEN&amp;#10;&#x9;&#x9;:GLOBAL.PROCESS_SEQ := :sr_jobs_view.process_seq;&amp;#10;&#x9;  SELECT activity_code &amp;#10;&#x9;  INTO   v_activity_code&amp;#10;&#x9;  FROM   sr_log_actions a, sr_log_message_actions b&amp;#10;&#x9;  WHERE  b.message_num = 1&amp;#10;&#x9;  AND    b.message_type = 6&amp;#10;&#x9;  AND    a. action_num = b.action_num&amp;#10;&#x9;  AND    b.main_yn = 'Y'&amp;#10;&#x9;  AND    b.stamp_action != 'D'&amp;#10;&#x9;  AND    b.task_seq = NVL(:sr_jobs_view.task_seq,-1);&amp;#10;&#x9;  &amp;#10;&#x9;   SELECT file_name&amp;#10;&#x9;   INTO   v_file_name&amp;#10;&#x9;   FROM RM_ACTIVITY_VERSIONS&amp;#10;&#x9;   WHERE activity_code=v_activity_code&amp;#10;&#x9;   AND activity_type=21&amp;#10;&#x9;   AND default_yn='Y';&amp;#10;&#x9;  CALL_FORM(v_file_name);&amp;#10;&#x9;END IF;&amp;#10;EXCEPTION&amp;#10;&#x9;WHEN OTHERS THEN NULL;&#x9;&amp;#10;END;&amp;#10;" DirtyInfo="true"/>
+         </Item>
+         <Item Name="SID" YPosition="1366" XPosition="7614" PromptFontSize="1100" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_ITEM_HEB_PC" Prompt="SID" TabPageName="EXTRA_TAB" PromptJustification="Start" DirtyInfo="true" DatabaseItem="true" PromptAttachmentEdge="Top" Width="1329" PromptAttachmentOffset="184" ColumnName="SID" PromptAlign="Center" PromptAlignOffset="0" CanvasName="TAB_CV" ParentType="29" PromptFontName="Arial"/>
+         <Item Name="MAP_STATUS" DirtyInfo="true" DatabaseItem="false" Width="3175" Height="556"/>
+         <Item Name="JOB_DESC_NEW" YPosition="106" TabPageName="" DirtyInfo="true" DatabaseItem="false" Width="2196" CanvasName="" Height="566"/>
+         <Item Name="MAP_STATUS_NEW" YPosition="106" TabPageName="" DirtyInfo="true" DatabaseItem="false" Width="2196" CanvasName="" Height="566"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="PROCESS_SEQ" DSCLength="0" DSCMandatory="true" DSCPrecision="6" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="VARCHAR2" DSCName="PROCESS_NAME" DSCLength="40" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="STEP_NUM" DSCLength="0" DSCMandatory="false" DSCPrecision="2" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="VARCHAR2" DSCName="PROCESS_USER" DSCLength="15" DSCMandatory="true" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="JOB_NUM" DSCLength="0" DSCMandatory="false" DSCPrecision="8" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="PROC_STATUS" DSCLength="0" DSCMandatory="false" DSCPrecision="4" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="DATE" DSCName="PROC_BEGIN_DATE" DSCLength="0" DSCMandatory="true" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="DATE" DSCName="PROC_END_DATE" DSCLength="0" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="JOB_QUEUE" DSCLength="0" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="VARCHAR2" DSCName="BROKEN" DSCLength="1" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="FAILURES" DSCLength="0" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="DATE" DSCName="NEXT_DATE" DSCLength="0" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="DATE" DSCName="THIS_DATE" DSCLength="0" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="DATE" DSCName="LAST_DATE" DSCLength="0" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="JOB_RUN" DSCLength="0" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <Relation Name="SR_JOBS_VIEW_RM_PROCESS_PAR" DeleteRecord="Non Isolated" Deferred="false" DirtyInfo="true" JoinCondition="SR_JOBS_VIEW.PROCESS_SEQ=RM_PROCESS_PARAM_SUM.PROCESS_SEQ " DetailBlock="RM_PROCESS_PARAM_SUM" RelationType="Join" AutoQuery="false" PreventMasterlessOperations="false"/>
+         <Trigger Name="POST-QUERY" TriggerText="DECLARE&amp;#10;  e_get_status EXCEPTION;&amp;#10;&#x9;&amp;#10;&#x9;procedure set_color(pi_va varchar2) is&amp;#10;  begin&amp;#10;    set_item_instance_property('SR_JOBS_VIEW.INDICATOR', CURRENT_RECORD, VISUAL_ATTRIBUTE,pi_va);&#x9;&amp;#10;  end;&amp;#10;  &amp;#10;BEGIN&amp;#10;&#x9;/*&amp;#10;  IF :SR_JOBS_VIEW.JOB_NUM IS NOT NULL THEN&amp;#10;    BEGIN&amp;#10;      SELECT j.job job_queue,&amp;#10;             j.broken,&amp;#10;             j.failures,&amp;#10;             j.next_date,&amp;#10;             j.this_date,&amp;#10;             j.last_date&amp;#10;        INTO :SR_JOBS_VIEW.JOB_QUEUE,&amp;#10;             :SR_JOBS_VIEW.BROKEN,&amp;#10;             :SR_JOBS_VIEW.FAILURES,&amp;#10;             :SR_JOBS_VIEW.NEXT_DATE,&amp;#10;             :SR_JOBS_VIEW.THIS_DATE,&amp;#10;             :SR_JOBS_VIEW.LAST_DATE&amp;#10;        FROM sys.dba_jobs j&amp;#10;       WHERE j.job = :SR_JOBS_VIEW.JOB_NUM;&amp;#10;    EXCEPTION&amp;#10;      WHEN OTHERS THEN&amp;#10;        NULL;&amp;#10;    END;&amp;#10;    &amp;#10;    BEGIN&amp;#10;      SELECT jr.JOB,&amp;#10;             jr.SID&amp;#10;        INTO :SR_JOBS_VIEW.JOB_RUNNING_NOW,&amp;#10;             :SR_JOBS_VIEW.SID&amp;#10;        FROM sys.dba_jobs_running jr&amp;#10;       WHERE jr.job = :SR_JOBS_VIEW.JOB_NUM;&amp;#10;    EXCEPTION&amp;#10;      WHEN OTHERS THEN&amp;#10;        NULL;&amp;#10;    END;&amp;#10;  END IF;&amp;#10;  &amp;#10;  */&amp;#10;  &amp;#10;  BEGIN&amp;#10;       SR_JOBS_PKG.get_details&amp;#10;                    (p_job      => :SR_JOBS_VIEW.JOB_QUEUE,&amp;#10;                     p_type     => :SR_JOBS_VIEW.JOB_TYPE,&amp;#10;                     p_interval => :SR_JOBS_VIEW.interval_time                     &amp;#10;                    );&amp;#10;       --:sr_jobs_view.MAP_STATUS:=SR_JOBS_PKG.GET_MAP_STATUS( :SR_JOBS_VIEW.PROCESS_SEQ);             &amp;#10;  EXCEPTION&amp;#10;  &#x9;   when OTHERS then&amp;#10;  &#x9;        null;&amp;#10;  END;&amp;#10;     &amp;#10;        &amp;#10;        &amp;#10;  :SR_JOBS_VIEW.START_DATE := :SR_JOBS_VIEW.PROCESS_START;&amp;#10;    --עיבוד הוסר(sr_jobs_pkg.remove_job but not kill session job_status = 7 )&amp;#10;   -- BEGIN&amp;#10;    /*&amp;#10;            0 נשלח להרצה&amp;#10;            1 ממתין לריצה&amp;#10;            2 סיים ונכשל&amp;#10;            3 סיים בהצלחה&amp;#10;            4 לא נשלח&amp;#10;            5 בריצה&amp;#10;            6 נכשל (לא סיים)&amp;#10;            7 עיבוד הוסר&amp;#10;            8 סיים עם שגיאות&amp;#10;            9 מתוזמן&amp;#10;      */&amp;#10;    /* IF :SR_JOBS_VIEW.JOB_STATUS IN (2, 3) THEN&amp;#10;        :SR_JOBS_VIEW.MAP_STATUS := :SR_JOBS_VIEW.JOB_STATUS;&amp;#10;        RAISE e_get_status;&amp;#10;      END IF;&amp;#10;      IF :SR_JOBS_VIEW.JOB_num IS NOT NULL and :SR_JOBS_VIEW.JOB_STATUS NOT IN (0,7,8) THEN&amp;#10;        -- בריצה&amp;#10;        :SR_JOBS_VIEW.MAP_STATUS := 5;&amp;#10;        RAISE e_get_status;&amp;#10;      END IF;&amp;#10;      IF :SR_JOBS_VIEW.JOB_QUEUE IS NOT NULL AND&amp;#10;         :SR_JOBS_VIEW.JOB_STATUS =  0 AND&amp;#10;         :SR_JOBS_VIEW.NEXT_DATE > SYSDATE THEN&amp;#10;        -- מתוזמן&amp;#10;        :SR_JOBS_VIEW.START_DATE := :SR_JOBS_VIEW.NEXT_DATE;&amp;#10;        :SR_JOBS_VIEW.MAP_STATUS := 9;&amp;#10;        RAISE e_get_status;&amp;#10;      END IF;&amp;#10;      IF :SR_JOBS_VIEW.JOB_QUEUE IS NOT NULL and :SR_JOBS_VIEW.JOB_STATUS NOT IN (7, 8) THEN&amp;#10;        -- מחכה לתורו לרוץ &amp;#10;        :SR_JOBS_VIEW.MAP_STATUS := 1;&amp;#10;        RAISE e_get_status;&amp;#10;      END IF;&amp;#10;      IF :SR_JOBS_VIEW.JOB_STATUS IS NULL THEN&amp;#10;        -- לא נשלח&amp;#10;        :SR_JOBS_VIEW.MAP_STATUS := 4;&amp;#10;        RAISE e_get_status;&amp;#10;      END IF;&amp;#10;      IF :SR_JOBS_VIEW.JOB_STATUS IN (0, 7, 8) THEN&amp;#10;        :SR_JOBS_VIEW.MAP_STATUS := :SR_JOBS_VIEW.JOB_STATUS;&amp;#10;        RAISE e_get_status;&amp;#10;      END IF;&amp;#10;      IF :SR_JOBS_VIEW.JOB_STATUS = 1 THEN&amp;#10;        -- נכשל ולא סיים&amp;#10;        :SR_JOBS_VIEW.MAP_STATUS := 6;&amp;#10;        RAISE e_get_status;&amp;#10;      END IF;&amp;#10;      :SR_JOBS_VIEW.MAP_STATUS := 6;&amp;#10;      RAISE e_get_status;&amp;#10;    EXCEPTION&amp;#10;      WHEN e_get_status THEN&amp;#10;        :SR_JOBS_VIEW.JOB_DESC := Get_Desc_Query_Pkg.get_code_desc_query(100,&amp;#10;                                                                         :SR_JOBS_VIEW.MAP_STATUS);&amp;#10;      WHEN OTHERS THEN&amp;#10;        NULL;&amp;#10;    END;*/&amp;#10;    --:SR_JOBS_VIEW.JOB_DESC_NEW:=:SR_JOBS_VIEW.JOB_DESC;&amp;#10;    --:SR_JOBS_VIEW.MAP_STATUS_NEW:=:SR_JOBS_VIEW.MAP_STATUS; &amp;#10;    &amp;#10;    --:SR_JOBS_VIEW.JOB_DESC:=sr_jobs_pkg.get_job_status_desc(:SR_JOBS_VIEW.PROCESS_SEQ, :SR_JOBS_VIEW.MAP_STATUS);&amp;#10;    :SR_JOBS_VIEW.JOB_DESC:=sr_jobs_pkg.get_map_status(:SR_JOBS_VIEW.PROCESS_SEQ, :SR_JOBS_VIEW.MAP_STATUS);&amp;#10;    --:SR_JOBS_VIEW.JOB_DESC:=RM_GENERAL.get_job_status_desc(:SR_JOBS_VIEW.PROCESS_SEQ);&amp;#10;    &amp;#10;    if :QUERY.JOB_STATUS = 9 and nvl(:SR_JOBS_VIEW.NEXT_DATE,sysdate-1) &lt;= sysdate then&amp;#10;    &#x9;raise form_trigger_failure;&amp;#10;    end if;&amp;#10;  &amp;#10;    /* במידה והעיבוד מוקפא */&amp;#10;    IF :SR_JOBS_VIEW.BROKEN IS NOT NULL AND :SR_JOBS_VIEW.BROKEN &lt;> 'N' THEN&amp;#10;      :SR_JOBS_VIEW.SHOW_BROKEN := CHR(51);&amp;#10;    ELSE&amp;#10;      :SR_JOBS_VIEW.SHOW_BROKEN := NULL;&amp;#10;    END IF;&amp;#10;  &amp;#10;    BEGIN&amp;#10;      SELECT t.first_name || ' ' || t.family_name family_name&amp;#10;        INTO :SR_JOBS_VIEW.STAMP_USER_DISP&amp;#10;        FROM rm_users t&amp;#10;       WHERE t.user_name = :SR_JOBS_VIEW.STAMP_USER;&amp;#10;    EXCEPTION&amp;#10;      WHEN OTHERS THEN&amp;#10;        :SR_JOBS_VIEW.STAMP_USER_DISP := :SR_JOBS_VIEW.STAMP_USER;&amp;#10;    END;&amp;#10;    &amp;#10;    IF :SR_JOBS_VIEW.MAP_STATUS in (9) then&amp;#10;    &#x9;set_color('VA_SCHEDULE');&amp;#10;    ELSIF :SR_JOBS_VIEW.MAP_STATUS in (5) then&amp;#10;    &#x9;set_color('VA_RUN'); &amp;#10;    ELSIF :SR_JOBS_VIEW.MAP_STATUS in (2,8) then&amp;#10;    &#x9;set_color('VA_FAILURE'); &amp;#10;    ELSIF :SR_JOBS_VIEW.MAP_STATUS in (6) then&amp;#10;    &#x9;set_color('VA_FAILURE_NOT_FINISHED'); &amp;#10;    ELSIF :SR_JOBS_VIEW.MAP_STATUS in (7) then&amp;#10;    &#x9;set_color('VA_CANCELED'); &amp;#10;    ELSIF :SR_JOBS_VIEW.MAP_STATUS in (1,4) then&amp;#10;    &#x9;set_color('VA_WAIT');&amp;#10;    ELSE &amp;#10;    &#x9;set_color('VA_FINISHED');&amp;#10;    END IF;&amp;#10;exception&amp;#10;  when form_trigger_failure then&amp;#10;    raise form_trigger_failure;    &#x9; &amp;#10;END;"/>
+         <Trigger Name="PRE-QUERY" TriggerText="DECLARE&amp;#10;   v_where  VARCHAR2(800) := 'stamp_action&lt;>''D''';&amp;#10;   l_dummy      varchar2(200);&amp;#10;   v_Desc   VARCHAR2(100);&amp;#10;BEGIN&amp;#10;&amp;#10;   IF NOT ID_NULL(FIND_TIMER('REFRESH_TIMER')) THEN&amp;#10;     DELETE_TIMER('REFRESH_TIMER');&amp;#10;   END IF;    &amp;#10;&amp;#10;&#x9;  if :global.calling_form IN(862,1003) THEN  -- yuri 28/10/14&amp;#10;   &#x9;  IF :global.process_seq IS NOT NULL THEN&amp;#10;   &#x9;    begin &amp;#10;   &#x9; &#x9;    select template_num,stamp_user&amp;#10;   &#x9; &#x9;      into l_dummy,:query.process_user&amp;#10;   &#x9; &#x9;      from rm_processes t&amp;#10;           where t.process_seq = :global.process_seq ;&amp;#10;           if l_dummy is not null then&amp;#10;              v_where := v_where ||' AND template_num = '||l_dummy;&amp;#10;           end if;&amp;#10;          :query.process_seq := null;&amp;#10;   &#x9;    exception&amp;#10;   &#x9;    &#x9;when others then&amp;#10;   &#x9;    &#x9;  null;&amp;#10;   &#x9;    end;&amp;#10;   &#x9;  end if; &amp;#10;   &#x9;end if;&amp;#10;   &#x9; --&amp;#10;&#x9;  &amp;#10;    IF :query.process_seq IS NOT NULL THEN&amp;#10;       v_where := v_where ||' AND process_seq = :query.process_seq';&amp;#10;    END IF;&amp;#10;    IF :query.process_user IS NOT NULL THEN&amp;#10;       v_where := v_where ||' AND stamp_user = :query.process_user';&amp;#10;    END IF;&amp;#10;      &amp;#10;    IF :query.proc_begin_date IS NOT NULL THEN&amp;#10;       v_where := v_where ||' AND TRUNC(process_start) >= :query.proc_begin_date';&amp;#10;    END IF;&amp;#10;    &amp;#10;    IF :query.proc_end_date IS NOT NULL THEN&amp;#10;       v_where := v_where ||' AND trunc(process_end) &lt;= :query.proc_end_date';&amp;#10;    END IF;&amp;#10;    IF :query.process_name IS NOT NULL THEN&amp;#10;       v_where := v_where ||' AND UPPER(process_name) LIKE UPPER('||''''||'%'||:query.process_name||'%'||''''||')'||'';                               &amp;#10;    END IF;&amp;#10;    &amp;#10;    IF :query.job_status IS NOT NULL THEN&amp;#10;    &#x9; IF :query.job_status IN (2,3) THEN&amp;#10;         v_where := v_where ||' AND job_status = '||:query.job_status;&amp;#10;       ELSIF :query.job_status = 5 THEN-- בריצה&amp;#10;       &#x9;  v_where :=v_where ||' and job_run is not null';&amp;#10;       &#x9; --v_where :=v_where ||' AND exists(SELECT /*+ FIRST_ROWS(40) */ 1 from SR_JOBS_VIEW v where rm_processes.process_seq = v.process_seq and job_run is not null)'||&amp;#10;                 --   ' AND job_status not in (0,7,8)'||&amp;#10;                 --   ' AND process_start >= (SYSDATE-7)';&amp;#10;       ELSIF :query.job_status = 9 THEN-- מתוזמן&amp;#10;       &#x9;     v_where := v_where || ' AND job_status = 0 and job_num is not null and NEXT_DATE > SYSDATE ';       &amp;#10;       ELSIF :query.job_status = 1 THEN --ממתין לריצה&amp;#10;         v_where := v_where ||' AND job_queue IS NOT NULL&amp;#10;                         &#x9;&#x9;&#x9;&#x9;and JOB_RUN is null&amp;#10;        &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AND job_status NOT In(2,3,7, 8) ';&amp;#10;       ELSIF :query.job_status = 4 THEN--לא נשלח&amp;#10;       &#x9; v_where := v_where || ' AND job_status IS NULL';&amp;#10;       ELSIF :query.job_status in (0, 7, 8) THEN--נשלח להרצה&amp;#10;       &#x9; v_where := v_where || ' AND job_status = '||:query.job_status;&amp;#10;       ELSIF :query.job_status = 6 THEN --נכשל ולא סיים&amp;#10;       &#x9; v_where := v_where || ' AND job_status = 1';&amp;#10;       END IF;&amp;#10;    END IF;&amp;#10;&amp;#10;    IF :query.process_seq IS NULL&amp;#10;&#x9;&#x9;    AND :query.process_user IS NULL&amp;#10;&#x9;&#x9;    AND :query.proc_begin_date IS NULL&amp;#10;&#x9;&#x9;    AND :query.proc_end_date IS NULL  &amp;#10;&#x9;&#x9;    AND :query.job_status IS NULL&amp;#10;&#x9;&#x9;    AND :query.TEMPLATE_SEQ IS NULL&amp;#10;&#x9;&#x9;    AND :query.TASK_CODE IS NULL&amp;#10;&#x9;&#x9;    AND :query.STEP_NUM IS NULL&amp;#10;&#x9;&#x9;    AND :query.process_name IS NULL THEN -- ברירת מחדל&amp;#10;       v_where := v_where ||' AND trunc(process_start) >= trunc(sysdate)';&amp;#10;       :query.proc_begin_date := trunc(sysdate);&amp;#10;    END IF;&amp;#10;    if :QUERY.TASK_CODE is not null then&amp;#10;    &#x9; v_where := v_where || ' AND TASK_SEQ = '||:QUERY.TASK_CODE;&amp;#10;    end if;&amp;#10;    INSERT_DEBUG('MY_CHECK1' || :QUERY.TASK_CODE);&amp;#10;     IF :QUERY.STEP_NUM IS NOT NULL THEN&amp;#10;       v_where := v_where ||' AND STEP_NUM = '||:QUERY.STEP_NUM;&amp;#10;     END IF;&amp;#10;    INSERT_DEBUG('MY_CHECK2' || :QUERY.STEP_NUM );&amp;#10;    if :QUERY.TEMPLATE_SEQ is not null then&amp;#10;    &#x9;if :QUERY.TEMPLATE_TYPE = 'יתרות' then &amp;#10;    &#x9;   v_where := v_where || ' AND TEMPLATE_NUM = '||:QUERY.TEMPLATE_SEQ||&amp;#10;    &#x9;       ' and TASK_SEQ in (342,343)' ;&amp;#10;    &#x9;else&amp;#10;    &#x9;   v_where := v_where || ' AND TEMPLATE_NUM = '||:QUERY.TEMPLATE_SEQ||&amp;#10;    &#x9;       ' and TASK_SEQ in (340,341)' ;&amp;#10;      end if;    &#x9;&#x9;&amp;#10;    end if;&amp;#10; &amp;#10;    SET_BLOCK_PROPERTY('sr_jobs_view',DEFAULT_WHERE,v_where);&amp;#10;END;"/>
+         <Trigger Name="WHEN-NEW-RECORD-INSTANCE" TriggerText="DECLARE&amp;#10;&#x9;  v_profile NUMBER;&amp;#10;&#x9;  v_release NUMBER := 0; /*שחרור */&amp;#10;&#x9;  v_broken  NUMBER := 0; /* הקפאה */&amp;#10;&#x9;  v_remove  NUMBER :=0; /* הסרה */&amp;#10;BEGIN&amp;#10;&amp;#10;      &amp;#10;     &amp;#10;  SR_JOBS_PKG.SET_BUTTONS_STATUS (P_PROCESS_SEQ    => :sr_jobs_view.PROCESS_SEQ, &amp;#10;                                  P_USER_NAME      => :GLOBAL.USER_NAME,&amp;#10;                                  P_SHOW_BROKEN    => :sr_jobs_view.SHOW_BROKEN ,&amp;#10;                                  P_INTERVAL_TIME  => :sr_jobs_view.INTERVAL_TIME,&amp;#10;                                  P_JOB_RUNNING_NOW  => :sr_jobs_view.JOB_RUNNING_NOW, &amp;#10;                                  P_MAP_STATUS       => :SR_JOBS_VIEW.MAP_STATUS,&amp;#10;                                  P_REMOVE_BUT       => v_remove,&amp;#10;                                  P_RELEASE_BUT      => v_release,&amp;#10;                                  P_BROKEN_BUT       => v_broken&amp;#10;                                );&amp;#10;                                 &amp;#10;  sr_jobs_view_pkg.enable_button (v_remove,v_broken,v_release);&amp;#10;  sr_jobs_view_pkg.enable_button_param(:sr_jobs_view.process_name);&amp;#10;  &amp;#10;  IF :sr_jobs_view.process_seq IS NOT NULL THEN&amp;#10;  &#x9;GO_BLOCK('RM_PROCESS_PARAM_SUM');&amp;#10;  &#x9;EXECUTE_QUERY;&amp;#10;  &#x9;GO_BLOCK('sr_jobs_view');&amp;#10;  END IF;&amp;#10;END;"/>
+         <Trigger Name="ON-POPULATE-DETAILS" TriggerText="--&amp;#10;-- Begin default relation declare section&amp;#10;--&amp;#10;DECLARE&amp;#10;  recstat     VARCHAR2(20) := :System.record_status;   &amp;#10;  startitm    VARCHAR2(61) := :System.cursor_item;   &amp;#10;  rel_id      Relation;&amp;#10;--&amp;#10;-- End default relation declare section&amp;#10;--&amp;#10;--&amp;#10;-- Begin default relation program section&amp;#10;--&amp;#10;BEGIN&amp;#10;  IF ( recstat = 'NEW' or recstat = 'INSERT' ) THEN   &amp;#10;    RETURN;&amp;#10;  END IF;&amp;#10;  --&amp;#10;  -- Begin RM_PROCESS_PARAM_SUM detail program section&amp;#10;  --&amp;#10;  IF ( (:SR_JOBS_VIEW.PROCESS_SEQ is not null) ) THEN   &amp;#10;    rel_id := Find_Relation('SR_JOBS_VIEW.SR_JOBS_VIEW_RM_PROCESS_PAR');   &amp;#10;    Query_Master_Details(rel_id, 'RM_PROCESS_PARAM_SUM');   &amp;#10;  END IF;&amp;#10;  --&amp;#10;  -- End RM_PROCESS_PARAM_SUM detail program section&amp;#10;  --&amp;#10;&amp;#10;  IF ( :System.cursor_item &lt;> startitm ) THEN     &amp;#10;     Go_Item(startitm);     &amp;#10;     Check_Package_Failure;     &amp;#10;  END IF;&amp;#10;END;&amp;#10;--&amp;#10;-- End default relation program section&amp;#10;--&amp;#10;" DirtyInfo="true"/>
+         <Trigger Name="ON-CHECK-DELETE-MASTER" TriggerText="--&amp;#10;-- Begin default relation declare section&amp;#10;--&amp;#10;DECLARE&amp;#10;  Dummy_Define CHAR(1);&amp;#10;  --&amp;#10;  -- Begin RM_PROCESS_PARAM_SUM detail declare section&amp;#10;  --&amp;#10;  CURSOR RM_PROCESS_PARAM_SUM_cur IS      &amp;#10;    SELECT 1 FROM rm_process_param r     &amp;#10;    WHERE r.PROCESS_SEQ = :SR_JOBS_VIEW.PROCESS_SEQ;&amp;#10;  --&amp;#10;  -- End RM_PROCESS_PARAM_SUM detail declare section&amp;#10;  --&amp;#10;--&amp;#10;-- End default relation declare section&amp;#10;--&amp;#10;--&amp;#10;-- Begin default relation program section&amp;#10;--&amp;#10;BEGIN&amp;#10;  --&amp;#10;  -- Begin RM_PROCESS_PARAM_SUM detail program section&amp;#10;  --&amp;#10;  OPEN RM_PROCESS_PARAM_SUM_cur;     &amp;#10;  FETCH RM_PROCESS_PARAM_SUM_cur INTO Dummy_Define;     &amp;#10;  IF ( RM_PROCESS_PARAM_SUM_cur%found ) THEN     &amp;#10;    Message('Cannot delete master record when matching detail records exist.');     &amp;#10;    CLOSE RM_PROCESS_PARAM_SUM_cur;     &amp;#10;    RAISE Form_Trigger_Failure;     &amp;#10;  END IF;&amp;#10;  CLOSE RM_PROCESS_PARAM_SUM_cur;&amp;#10;  --&amp;#10;  -- End RM_PROCESS_PARAM_SUM detail program section&amp;#10;  --&amp;#10;END;&amp;#10;--&amp;#10;-- End default relation program section&amp;#10;--&amp;#10;" DirtyInfo="true"/>
+      </Block>
+      <Block Name="RM_PROCESS_PARAM" UpdateAllowed="false" ScrollbarTabPageName="" QueryDataSourceName="rm_process_param" RecordsDisplayCount="10" InsertAllowed="false" ScrollbarYPosition="3203" ShowScrollbar="true" DeleteAllowed="false" DirtyInfo="true" ScrollbarCanvasName="PARAMS_CV" WhereClause="process_seq=:sr_jobs_view.process_seq" ScrollbarWidth="413" ScrollbarXPosition="609" OrderByClause="param_num" ScrollbarLength="6798">
+         <Item Name="PROCESS_SEQ" MaximumLength="15" YPosition="1244" XPosition="2831" ItemsDisplay="1" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="DISP_NUM_INT_COLOR_PC" Prompt="מס עיבוד" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" Width="3228" ColumnName="PROCESS_SEQ" PromptAttachmentOffset="426" CanvasName="PARAMS_CV" ParentType="29" Required="true"/>
+         <Item Name="PARAM_NUM" MaximumLength="4" YPosition="3229" XPosition="1069" PromptFontSize="1100" ItemsDisplay="0" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="NUM_INT_PC" Prompt="מס' פרמטר" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" PromptFontSpacing="Normal" Width="915" PromptAttachmentOffset="143" ColumnName="PARAM_NUM" PromptFontWeight="Medium" PromptAlignOffset="-290" CanvasName="PARAMS_CV" ParentType="29" PromptFontStyle="Plain" PromptFontName="Arial" Required="true"/>
+         <Item Name="PARAM_NAME" MaximumLength="40" YPosition="3229" XPosition="2038" ItemsDisplay="0" DirtyInfo="true" Width="5397" CanvasName="PARAMS_CV" DataLengthSemantics="BYTE" PromptFontName="Arial" PromptFontSize="1100" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_ITEM_HEB_PC" Prompt="שם" TabPageName="" PromptDisplayStyle="First Record" PromptFontSpacing="Normal" ColumnName="PARAM_NAME" PromptAttachmentOffset="143" PromptAlign="Center" PromptAlignOffset="0" PromptFontWeight="Medium" ParentType="29" PromptFontStyle="Plain"/>
+         <Item Name="PARAM_TYPE" MaximumLength="5" YPosition="12144" XPosition="13612" DataType="Number" ItemsDisplay="0" ItemType="Text Item" Prompt="Param Type" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" PromptAttachmentEdge="Top" Width="1429" ColumnName="PARAM_TYPE" PromptAlign="Center" CanvasName="" Height="476"/>
+         <Item Name="NUMBER_PARAM" MaximumLength="17" YPosition="3518" XPosition="5635" PromptFontSize="800" ItemsDisplay="0" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="NUMBER_PC" Prompt="ערך" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" PromptFontSpacing="Normal" Width="2645" ColumnName="NUMBER_PARAM" PromptFontWeight="Medium" CanvasName="" ParentType="29" PromptFontStyle="Plain" PromptFontName="Arial"/>
+         <Item Name="CHAR_PARAM" MaximumLength="40" YPosition="3518" XPosition="5635" ItemsDisplay="0" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_ITEM_HEB_PC" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" ColumnName="CHAR_PARAM" Width="2698" CanvasName="" ParentType="29" DataLengthSemantics="BYTE"/>
+         <Item Name="DATE_PARAM" MaximumLength="10" YPosition="3518" XPosition="5635" ItemsDisplay="0" ItemType="Text Item" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_DATE_PC" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" ColumnName="DATE_PARAM" Width="2645" CanvasName="" ParentType="29"/>
+         <Item Name="OUTPUT_PARAM" MaximumLength="40" YPosition="3229" XPosition="7452" PromptFontSize="1100" ItemsDisplay="0" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_ITEM_HEB_PC" Prompt="ערך" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" PromptFontSpacing="Normal" Width="3578" PromptAttachmentOffset="143" ColumnName="OUTPUT_PARAM" PromptAlign="Center" PromptFontWeight="Medium" CanvasName="PARAMS_CV" ParentType="29" PromptFontStyle="Plain" PromptFontName="Arial" DataLengthSemantics="BYTE"/>
+         <Item Name="DESC_PARAM" MaximumLength="40" YPosition="3229" XPosition="11055" PromptFontSize="1100" ItemsDisplay="0" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TXT_ITEM_HEB_PC" Prompt="תיאור" TabPageName="" PromptDisplayStyle="First Record" DirtyInfo="true" PromptFontSpacing="Normal" Width="5503" PromptAttachmentOffset="143" ColumnName="DESC_PARAM" PromptAlign="Center" PromptFontWeight="Medium" CanvasName="PARAMS_CV" ParentType="29" PromptFontStyle="Plain" PromptFontName="Arial" DataLengthSemantics="BYTE"/>
+         <Item Name="EXIT_PARAMS" YPosition="10251" Label="PUSH_BUTTON120" XPosition="12303" DirtyInfo="true" ParentType="29" CanvasName="PARAMS_CV" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="BUTTON_EXIT_PC">
+            <Trigger Name="WHEN-BUTTON-PRESSED" TriggerText="&amp;#10;Hide_view('params_cv');&amp;#10;hide_window('Params_win');&amp;#10;Go_Block('sr_jobs_view');&amp;#10;GO_RECORD(:parameter.current_rec);" DirtyInfo="true"/>
+         </Item>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="PROCESS_SEQ" DSCNochildren="false" DSCLength="0" DSCMandatory="true" DSCPrecision="6" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="GROUP_NUM" DSCNochildren="false" DSCLength="0" DSCMandatory="true" DSCPrecision="2" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="PARAM_NUM" DSCNochildren="false" DSCLength="0" DSCMandatory="true" DSCPrecision="3" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="VARCHAR2" DSCName="PARAM_NAME" DSCNochildren="false" DSCLength="40" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="PARAM_CODE" DSCNochildren="false" DSCLength="0" DSCMandatory="true" DSCPrecision="4" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="PARAM_TYPE" DSCNochildren="false" DSCLength="0" DSCMandatory="false" DSCPrecision="4" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="NUMBER" DSCName="NUMBER_PARAM" DSCNochildren="false" DSCLength="0" DSCMandatory="false" DSCPrecision="15" DSCScale="2"/>
+         <DataSourceColumn Type="Query" DSCType="VARCHAR2" DSCName="CHAR_PARAM" DSCNochildren="false" DSCLength="40" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="DATE" DSCName="DATE_PARAM" DSCNochildren="false" DSCLength="0" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="VARCHAR2" DSCName="OUTPUT_PARAM" DSCNochildren="false" DSCLength="40" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="VARCHAR2" DSCName="DESC_PARAM" DSCNochildren="false" DSCLength="40" DSCMandatory="false" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="VARCHAR2" DSCName="STAMP_ACTION" DSCNochildren="false" DSCLength="1" DSCMandatory="true" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="DATE" DSCName="STAMP_CDATE" DSCNochildren="false" DSCLength="0" DSCMandatory="true" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="DATE" DSCName="STAMP_DATE" DSCNochildren="false" DSCLength="0" DSCMandatory="true" DSCPrecision="0" DSCScale="0"/>
+         <DataSourceColumn Type="Query" DSCType="VARCHAR2" DSCName="STAMP_USER" DSCNochildren="false" DSCLength="15" DSCMandatory="true" DSCPrecision="0" DSCScale="0"/>
+      </Block>
+      <Block Name="RM_PROCESS_PARAM_SUM" UpdateAllowed="false" ScrollbarTabPageName="PARAMS_TAB" QueryDataSourceName="rm_process_param" RecordsDisplayCount="8" InsertAllowed="false" ScrollbarYPosition="1323" ShowScrollbar="true" DeleteAllowed="false" DirtyInfo="true" ScrollbarCanvasName="TAB_CV" WhereClause="SHOW_YN='Y'" ScrollbarWidth="476" ScrollbarXPosition="0" OrderByClause="param_num" ScrollbarLength="5477">
+         <Item Name="PROCESS_SEQ" DirtyInfo="true" Width="2381" Height="476" CopyValueFromItem="SR_JOBS_VIEW.PROCESS_SEQ"/>
+         <Item Name="PARAM_NAME" MaximumLength="200" YPosition="1402" XPosition="547" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TEXT_ITEM_HEB_CENTER_PC" Prompt="שם פרמטר" TabPageName="PARAMS_TAB" DirtyInfo="true" PromptAttachmentOffset="184" Width="4815" CanvasName="TAB_CV" ParentType="29"/>
+         <Item Name="OUTPUT_PARAM" MaximumLength="200" YPosition="1402" XPosition="5388" Justification="End" ReadingOrder="Left To Right" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TEXT_ITEM_HEB_CENTER_PC" Prompt="תיאור" TabPageName="PARAMS_TAB" DirtyInfo="true" Width="5200" PromptAttachmentOffset="184" CanvasName="TAB_CV" ParentType="29" PopupMenuName="STD_MENU_VIEW"/>
+      </Block>
+      <Block Name="IVR_RM_PHON" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS">
+         <Item Name="CHK_ADD_PHON" SubclassSubObject="true">
+            <Trigger Name="WHEN-CHECKBOX-CHANGED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="P_AREA_CODE_PHON" SubclassSubObject="true"/>
+         <Item Name="P_PHON" SubclassSubObject="true"/>
+         <Item Name="PHONE_NUM" SubclassSubObject="true"/>
+         <Item Name="PHONE_AREA_CODE" SubclassSubObject="true"/>
+         <Item Name="CLIENT_ID" SubclassSubObject="true"/>
+         <Item Name="CLIENT_TYPE" SubclassSubObject="true"/>
+         <Item Name="DET_AREA_CODE_PHON" SubclassSubObject="true">
+            <Trigger Name="WHEN-VALIDATE-ITEM" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="DET_PHON" SubclassSubObject="true"/>
+         <Item Name="FIRST_NAME" SubclassSubObject="true"/>
+         <Item Name="LAST_NAME" SubclassSubObject="true"/>
+         <Item Name="SMS" SubclassSubObject="true">
+            <Trigger Name="WHEN-CHECKBOX-CHANGED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="UPDATE" SubclassSubObject="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="EXIT" SubclassSubObject="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="COMPANY" SubclassSubObject="true"/>
+         <Item Name="PHON_TYPE_DESC" SubclassSubObject="true"/>
+         <Item Name="PHON_TYPE" SubclassSubObject="true"/>
+         <Trigger Name="PRE-BLOCK" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="PRE-QUERY" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="POST-QUERY" SubclassSubObject="true" DirtyInfo="true"/>
+      </Block>
+      <Block Name="HELP_BLK" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS">
+         <Item Name="PREV_ITEM" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="HLP_ITEM" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="DONE" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="HLP_NOTE" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="HELP_STATUS" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="HLP_MODULE" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="HLP_BLOCK" SubclassSubObject="true" DirtyInfo="true"/>
+      </Block>
+      <Block Name="T_DEBUG" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG">
+         <Item Name="T_IS_TRACE_ON" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-CHECKBOX-CHANGED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="T_IS_ADD_TIME" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-CHECKBOX-CHANGED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="T_IS_DEBUG_ON" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-CHECKBOX-CHANGED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="T_IS_DBA_TRACE" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-CHECKBOX-CHANGED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="T_BLOCK_LIST" SubclassSubObject="true" DirtyInfo="true">
+            <ListItemElement Index="1" Name="LIST5" Value="LIST5"/>
+            <Trigger Name="WHEN-LIST-CHANGED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="T_BLOCK_STATUS" SubclassSubObject="true"/>
+         <Item Name="T_BLOCK_DATA_SOURCE" SubclassSubObject="true"/>
+         <Item Name="T_ITEM_LIST" SubclassSubObject="true" DirtyInfo="true">
+            <ListItemElement Index="1" Name="LIST68" Value="LIST68"/>
+            <Trigger Name="WHEN-LIST-CHANGED" SubclassSubObject="true" DirtyInfo="true"/>
+            <Trigger Name="WHEN-VALIDATE-ITEM" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="T_ITEM_VALUE" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="T_ITEM_HINT_TEXT" SubclassSubObject="true"/>
+         <Item Name="T_ITEM_COLUMN_NAME" SubclassSubObject="true"/>
+         <Item Name="L_ITEM_DATABASE_VALUE" SubclassSubObject="true"/>
+         <Item Name="L_ITEM_DATATYPE" SubclassSubObject="true"/>
+         <Item Name="L_ITEM_DISPLAYED" SubclassSubObject="true"/>
+         <Item Name="L_ITEM_ENABLED" SubclassSubObject="true"/>
+         <Item Name="L_ITEM_FORMAT_MASK" SubclassSubObject="true"/>
+         <Item Name="L_ITEM_PROMPT_TEXT" SubclassSubObject="true"/>
+         <Item Name="L_ITEM_ICON" SubclassSubObject="true"/>
+         <Item Name="L_ITEM_REQUIRED" SubclassSubObject="true"/>
+         <Item Name="L_ITEM_MAX_LENGTH" SubclassSubObject="true"/>
+         <Item Name="CURRENT_BLOCK" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="CURRENT_ITEM" SubclassSubObject="true" DirtyInfo="true"/>
+         <Item Name="T_CHANGE" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="T_EXIT" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="SESSION_TRACE_FILE" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="WHEN-NEW-BLOCK-INSTANCE" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="PRE-BLOCK" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="ON-ERROR" SubclassSubObject="true" DirtyInfo="true"/>
+      </Block>
+      <Block Name="POPUP_CONFIRM" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_EVENT_CONFIRM">
+         <Item Name="OK_CONFIRME" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="CONTINUE_ACTIVITY" SubclassSubObject="true" DirtyInfo="true">
+            <Trigger Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" DirtyInfo="true"/>
+         </Item>
+         <Item Name="HIDDEN_ITEM" SubclassSubObject="true" DirtyInfo="true"/>
+         <Trigger Name="WHEN-NEW-BLOCK-INSTANCE" SubclassSubObject="true" DirtyInfo="true"/>
+      </Block>
+      <Canvas Name="TOOLBAR" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CANVAS">
+         <Graphics Name="RECT677" SubclassSubObject="true" DirtyInfo="true" GraphicsFontColorCode="0"/>
+         <Graphics Name="GRAPHIC678" SubclassSubObject="true" DirtyInfo="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="RECT713" SubclassSubObject="true" DirtyInfo="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+      </Canvas>
+      <Canvas Name="MAIN_CV_1" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_1">
+         <Graphics Name="GROUP285" SubclassSubObject="true" DirtyInfo="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="IMAGE265" YPosition="158" SubclassSubObject="true" XPosition="30638" DirtyInfo="true" ImageFilename="SR_JOBS_VIEW_MAIN_CV_1_IMAGE265.tif" Height="13204" ClipHeight="13204" GraphicsFontColor=""/>
+         <Graphics Name="IMAGE263" YPosition="1304" SubclassSubObject="true" XPosition="30308" DirtyInfo="true" ImageFilename="SR_JOBS_VIEW_MAIN_CV_1_IMAGE263.tif" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="ROUNDRECT269" YPosition="4926" SubclassSubObject="true" XPosition="864" DirtyInfo="true" Width="14660" Height="1001" CornerRadiusY="0" CornerRadiusX="0" GraphicsFontColor=""/>
+         <Graphics Name="RECT293" YPosition="5684" SubclassSubObject="true" XPosition="953" DirtyInfo="true" Width="14710" Height="5481" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="SEARCH_FRAME_RECT" YPosition="794" SubclassSubObject="true" XPosition="344" DirtyInfo="true" Width="24950" Height="2751" EdgePattern="none" GraphicsFontColorCode="0"/>
+         <Graphics Name="ROUNDRECT303" YPosition="10203" SubclassSubObject="true" XPosition="36724" DirtyInfo="true" Width="1376" Height="344" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="TEXT85" YPosition="3967" XPosition="1215" GraphicsText="ברירת המחדל של 'איתור לפי' היא עיבודים שבוצעו היום" GraphicsFontName="Arial" SubclassSubObject="true" GraphicsFontStyle="0" GraphicsFontWeight="Bold" DirtyInfo="true" GraphicsFontSize="1200" Width="9261" Height="529" GraphicsFontSpacing="Normal" GraphicsFontColorCode="153" GraphicsFontColor="metroblue1">
+            <CompoundText Name="CMPTXT109">
+               <TextSegment Name="TEXTSTR110" FontWeight="Bold" FontStyle="Plain" ForegroundColor="metroblue1" DirtyInfo="true" FontSpacing="Normal" FontSize="1200" FontName="Arial" Text="ברירת המחדל של 'איתור לפי' היא עיבודים שבוצעו היום"/>
+            </CompoundText>
+         </Graphics>
+         <Graphics Name="RECT242" YPosition="1084" SubclassSubObject="true" XPosition="2729" DirtyInfo="true" Width="2275" Height="583" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="ROUNDRECT259" YPosition="12964" SubclassSubObject="true" XPosition="26934" DirtyInfo="true" Width="1217" Height="662" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="GRAPHIC107" YPosition="1031" XPosition="12165" VerticalMargin="476" GraphicsType="Rectangle" HorizontalMargin="238" HorizontalObjectOffset="476" FillPattern="none" StartPromptOffset="238" BackColor="metroblue1" InternalLineWidth="1" Bevel="None" DirtyInfo="true" Width="2594" ScrollbarWidth="476" Height="556" JoinStyle="Bevel" EdgeForegroundColor="metroblue1" EdgeBackColor="metroblue1"/>
+         <Graphics Name="GRAPHIC108" YPosition="1032" XPosition="20637" VerticalMargin="476" GraphicsType="Rectangle" HorizontalMargin="238" HorizontalObjectOffset="476" FillPattern="none" StartPromptOffset="238" BackColor="metroblue1" InternalLineWidth="1" Bevel="None" DirtyInfo="true" Width="2328" ScrollbarWidth="476" Height="582" JoinStyle="Bevel" EdgeForegroundColor="metroblue1" EdgeBackColor="metroblue1"/>
+         <Graphics Name="TEXT111" YPosition="11914" HorizontalJustification="Right" XPosition="1293" GraphicsType="Text" FillPattern="none" BackColor="gray" Bevel="None" ForegroundColor="metroblue1" DirtyInfo="true" Width="2911" ScrollbarWidth="476" Height="529" JoinStyle="Bevel" EdgePattern="none" GraphicsFontColorCode="153" GraphicsFontColor="metroblue1" VerticalMargin="476" HorizontalMargin="238" GraphicsText="שינוי מצב העיבוד" HorizontalObjectOffset="476" StartPromptOffset="238" GraphicsFontName="Arial" GraphicsFontStyle="0" GraphicsFontWeight="Bold" GraphicsFontSize="1100" GraphicsFontSpacing="Normal">
+            <CompoundText Name="CMPTXT112">
+               <TextSegment Name="TEXTSTR113" FontWeight="Bold" FontStyle="Plain" ForegroundColor="metroblue1" DirtyInfo="true" FontSpacing="Normal" FontSize="1100" FontName="Arial" Text="שינוי מצב העיבוד"/>
+            </CompoundText>
+         </Graphics>
+         <Graphics Name="GRAPHIC127" YPosition="1058" XPosition="7737" VerticalMargin="476" GraphicsType="Rectangle" HorizontalMargin="238" HorizontalObjectOffset="476" FillPattern="none" StartPromptOffset="238" BackColor="white" InternalLineWidth="1" ForegroundColor="white" Bevel="None" DirtyInfo="true" Width="2275" ScrollbarWidth="476" Height="583" JoinStyle="Bevel" EdgeForegroundColor="metroblue1" EdgeBackColor="metroblue1"/>
+         <Graphics Name="RECT130" YPosition="344" XPosition="344" VerticalMargin="476" GraphicsType="Rectangle" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="gray" InternalLineWidth="227" ForegroundColor="white" Bevel="None" DirtyInfo="true" Width="24950" ScrollbarWidth="476" Height="529" JoinStyle="Bevel" EdgePattern="none" EdgeForegroundColor="metrogray1" EdgeBackColor="white"/>
+         <Graphics Name="TEXT131" YPosition="424" HorizontalJustification="Right" XPosition="2590" HorizontalOrigin="Right" BoundingBoxScalable="false" WrapText="false" GraphicsType="Text" FillPattern="none" BackColor="gray" Bevel="None" DirtyInfo="true" Width="2117" ScrollbarWidth="476" Height="450" JoinStyle="Bevel" EdgePattern="none" GraphicsFontColorCode="0" GraphicsFontColor="black" VerticalMargin="476" HorizontalMargin="238" GraphicsText="איתור עיבוד" HorizontalObjectOffset="476" StartPromptOffset="238" GraphicsFontName="Arial" GraphicsFontWeight="Bold" GraphicsFontStyle="0" GraphicsFontSize="1000" GraphicsFontSpacing="Normal">
+            <CompoundText Name="CMPTXT132">
+               <TextSegment Name="TEXTSTR133" FontWeight="Bold" FontStyle="Plain" ForegroundColor="black" DirtyInfo="true" FontSpacing="Normal" FontSize="1000" FontName="Arial" Text="איתור עיבוד"/>
+            </CompoundText>
+         </Graphics>
+         <Graphics Name="RECT135" YPosition="1931" XPosition="2752" VerticalMargin="476" GraphicsType="Rectangle" HorizontalMargin="238" HorizontalObjectOffset="476" FillPattern="none" StartPromptOffset="238" Bevel="None" DirtyInfo="true" Width="7942" ScrollbarWidth="476" Height="582" JoinStyle="Bevel" EdgePattern="solid" EdgeForegroundColor="metroblue1" EdgeBackColor="white"/>
+         <Graphics Name="RECT141" YPosition="1879" XPosition="13890" VerticalMargin="476" GraphicsType="Rectangle" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="gray" InternalLineWidth="1" Bevel="None" DirtyInfo="true" Width="873" ScrollbarWidth="476" Height="556" JoinStyle="Bevel" EdgePattern="solid" EdgeForegroundColor="metroblue1"/>
+         <Graphics Name="GRAPHIC176" YPosition="2775" XPosition="2610" VerticalMargin="476" GraphicsType="Rectangle" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="gray" InternalLineWidth="1" Bevel="None" DirtyInfo="true" Width="873" ScrollbarWidth="476" Height="556" JoinStyle="Bevel" EdgePattern="solid" EdgeForegroundColor="metroblue1"/>
+         <Graphics Name="GRAPHIC177" YPosition="2696" XPosition="13230" VerticalMargin="476" GraphicsType="Rectangle" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="gray" InternalLineWidth="1" Bevel="None" DirtyInfo="true" Width="1500" ScrollbarWidth="476" Height="556" JoinStyle="Bevel" EdgePattern="solid" EdgeForegroundColor="metroblue1"/>
+         <Graphics Name="GRAPHIC224" YPosition="1879" XPosition="22126" VerticalMargin="476" GraphicsType="Rectangle" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="gray" InternalLineWidth="1" Bevel="None" DirtyInfo="true" Width="834" ScrollbarWidth="476" Height="556" JoinStyle="Bevel" EdgePattern="solid" EdgeForegroundColor="metroblue1"/>
+      </Canvas>
+      <Canvas Name="PARAMS_CV" CanvasType="Stacked" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="MAIN_CV_WITHOUT_SEARCH" ViewportHeight="11430" ViewportWidth="16986" ViewportXPositionOnCanvas="0" DirtyInfo="true" ViewportYPositionOnCanvas="0" RaiseOnEnter="false" Width="17000" ParentType="4" Height="11430" WindowName="PARAMS_WIN">
+         <Graphics Name="MAIN_FRAME_RECT" YPosition="952" SubclassSubObject="true" DirtyInfo="true" Width="16598" Height="10214" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="IMAGE265" YPosition="8731" SubclassSubObject="true" XPosition="23749" DirtyInfo="true" Width="400" ImageFilename="SR_JOBS_VIEW_PARAMS_CV_IMAGE265.tif" Height="9498" ClipWidth="400" ClipHeight="9498" GraphicsFontColor=""/>
+         <Graphics Name="IMAGE263" YPosition="1036" SubclassSubObject="true" XPosition="20704" DirtyInfo="true" ImageFilename="SR_JOBS_VIEW_PARAMS_CV_IMAGE263.tif" Height="9838" ClipHeight="9838" GraphicsFontColor=""/>
+         <Graphics Name="ROUNDRECT269" YPosition="2406" SubclassSubObject="true" XPosition="583" DirtyInfo="true" Width="16033" Height="1612" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="RECT293" YPosition="3187" SubclassSubObject="true" XPosition="583" DirtyInfo="true" Width="16033" Height="6840" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="ROUNDRECT303" YPosition="12088" SubclassSubObject="true" XPosition="25029" DirtyInfo="true" Width="13097" Height="540" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="RECT119" YPosition="952" XPosition="309" VerticalMargin="476" GraphicsType="Rectangle" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="metrogray" InternalLineWidth="228" ForegroundColor="white" Bevel="None" DirtyInfo="true" Width="16571" ScrollbarWidth="476" Height="1086" JoinStyle="Bevel" EdgePattern="solid" EdgeForegroundColor="metrogray1" EdgeBackColor="white"/>
+         <Graphics Name="TEXT122" HorizontalJustification="Start" YPosition="740" VerticalOrigin="Bottom" XPosition="397" BoundingBoxScalable="false" WrapText="false" GraphicsType="Text" FillPattern="none" Bevel="None" DirtyInfo="true" Width="1958" ScrollbarWidth="476" Height="371" JoinStyle="Bevel" EdgePattern="none" GraphicsFontColorCode="76" GraphicsFontColor="red" VerticalMargin="476" HorizontalMargin="238" GraphicsText="פרמטרים לעיבוד" HorizontalObjectOffset="476" StartPromptOffset="238" GraphicsFontName="Arial" GraphicsFontWeight="Bold" GraphicsFontStyle="0" GraphicsFontSize="1200" GraphicsFontSpacing="Normal">
+            <CompoundText Name="CMPTXT123">
+               <TextSegment Name="TEXTSTR124" FontWeight="Bold" FontStyle="Plain" ForegroundColor="red" DirtyInfo="true" FontSpacing="Normal" FontSize="1200" FontName="Arial" Text="פרמטרים לעיבוד"/>
+            </CompoundText>
+         </Graphics>
+      </Canvas>
+      <Canvas Name="IVR_PHON" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CANVAS">
+         <Graphics Name="RECT939" SubclassSubObject="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="RECT920" SubclassSubObject="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="TEXT911" SubclassSubObject="true"/>
+         <Graphics Name="GRAPHIC914" SubclassSubObject="true"/>
+         <Graphics Name="GRAPHIC919" SubclassSubObject="true"/>
+         <Graphics Name="GRAPHIC921" SubclassSubObject="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="TEXT934" SubclassSubObject="true"/>
+         <Graphics Name="GRAPHIC938" SubclassSubObject="true"/>
+         <Graphics Name="TEXT949" SubclassSubObject="true"/>
+         <Graphics Name="GRAPHIC956" SubclassSubObject="true"/>
+         <Graphics Name="GRAPHIC957" SubclassSubObject="true"/>
+         <Graphics Name="GRAPHIC958" SubclassSubObject="true"/>
+         <Graphics Name="GRAPHIC960" SubclassSubObject="true"/>
+      </Canvas>
+      <Canvas Name="T_DEBUG" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <Canvas Name="MAIN_CV_WITHOUT_SEARCH" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH">
+         <Graphics Name="MAIN_FRAME_RECT" SubclassSubObject="true" DirtyInfo="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="IMAGE265" SubclassSubObject="true" DirtyInfo="true" ImageFilename="SR_JOBS_VIEW_MAIN_CV_WITHOUT_SEARCH_IMAGE265.tif" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="IMAGE263" SubclassSubObject="true" DirtyInfo="true" ImageFilename="SR_JOBS_VIEW_MAIN_CV_WITHOUT_SEARCH_IMAGE263.tif" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="ROUNDRECT269" SubclassSubObject="true" DirtyInfo="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="RECT293" SubclassSubObject="true" DirtyInfo="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+         <Graphics Name="ROUNDRECT303" SubclassSubObject="true" DirtyInfo="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+      </Canvas>
+      <Canvas Name="HELP_CAN" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CANVAS">
+         <Graphics Name="FRAME36" SubclassSubObject="true" DirtyInfo="true" GraphicsFontColorCode="0" GraphicsFontColor=""/>
+      </Canvas>
+      <Canvas Name="TAB_CV" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="TAB_CANVAS_PC" ViewportHeight="8096" ViewportWidth="10821" DirtyInfo="true" Width="10821" ParentType="29" Height="8096" ViewportYPosition="3700" ViewportXPosition="14791" WindowName="WINDOW1" DisplayViewport="true">
+         <TabPage Name="DETAILS_TAB" Label="פרטי עיבוד" DirtyInfo="true">
+            <Graphics Name="RECT147" YPosition="1164" XPosition="0" GraphicsType="Rectangle" VerticalMargin="476" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="metrogray1" InternalLineWidth="113" Bevel="None" DirtyInfo="true" Width="10133" ScrollbarWidth="476" Height="5636" EdgePattern="none" EdgeBackColor="white"/>
+            <Graphics Name="RECT148" YPosition="582" XPosition="0" GraphicsType="Rectangle" VerticalMargin="476" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="metroblue1" InternalLineWidth="113" Bevel="None" DirtyInfo="true" Width="10200" ScrollbarWidth="476" Height="790" EdgePattern="none" EdgeBackColor="white"/>
+         </TabPage>
+         <TabPage Name="PARAMS_TAB" Label="סיכום עיבוד" DirtyInfo="true">
+            <Graphics Name="TEXT150" HorizontalJustification="Start" YPosition="80" XPosition="159" GraphicsType="Text" FillPattern="none" Bevel="None" ForegroundColor="metroblue1" DirtyInfo="true" Width="2276" ScrollbarWidth="476" Height="371" EdgePattern="none" GraphicsFontColorCode="76" GraphicsFontColor="red" VerticalMargin="476" HorizontalMargin="238" GraphicsText="פרמטרים סיכומיים:" HorizontalObjectOffset="476" StartPromptOffset="238" GraphicsFontName="Arial" GraphicsFontWeight="Bold" GraphicsFontStyle="0" GraphicsFontSize="1000" GraphicsFontSpacing="Normal">
+               <CompoundText Name="CMPTXT151">
+                  <TextSegment Name="TEXTSTR152" FontWeight="Bold" FontStyle="Plain" ForegroundColor="red" DirtyInfo="true" FontSpacing="Normal" FontSize="1000" FontName="Arial" Text="פרמטרים סיכומיים:"/>
+               </CompoundText>
+            </Graphics>
+            <Graphics Name="RECT153" YPosition="501" XPosition="0" GraphicsType="Rectangle" VerticalMargin="476" HorizontalMargin="238" HorizontalObjectOffset="476" FillPattern="transparent" StartPromptOffset="238" BackColor="metroblue1" ForegroundColor="metroblue1" Bevel="None" DirtyInfo="true" Width="15000" ScrollbarWidth="476" Height="790" EdgePattern="none"/>
+            <Graphics Name="RECT154" YPosition="1297" XPosition="344" GraphicsType="Rectangle" VerticalMargin="476" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="metrogray1" ForegroundColor="metroblue1" Bevel="None" DirtyInfo="true" Width="10000" ScrollbarWidth="476" Height="5520" EdgePattern="none"/>
+         </TabPage>
+         <TabPage Name="SCHEDULER_TAB" Enabled="false" Label="תעדוף עיבודים" DirtyInfo="true" Visible="false">
+            <Graphics Name="RECT147" YPosition="1164" XPosition="0" GraphicsType="Rectangle" VerticalMargin="476" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="metrogray1" InternalLineWidth="113" Bevel="None" DirtyInfo="true" Width="10133" ScrollbarWidth="476" Height="5636" EdgePattern="none" EdgeBackColor="white"/>
+            <Graphics Name="RECT148" YPosition="582" XPosition="0" GraphicsType="Rectangle" VerticalMargin="476" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="metroblue1" InternalLineWidth="113" Bevel="None" DirtyInfo="true" Width="10159" ScrollbarWidth="476" Height="688" EdgePattern="none" EdgeBackColor="white"/>
+         </TabPage>
+         <TabPage Name="EXTRA_TAB" Label="מידע נוסף" DirtyInfo="true">
+            <Graphics Name="GRAPHIC200" YPosition="371" XPosition="0" GraphicsType="Rectangle" VerticalMargin="476" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="metroblue1" InternalLineWidth="113" Bevel="None" DirtyInfo="true" Width="10200" ScrollbarWidth="476" Height="790" EdgePattern="none" EdgeBackColor="white"/>
+            <Graphics Name="GRAPHIC201" YPosition="1164" XPosition="0" GraphicsType="Rectangle" VerticalMargin="476" HorizontalMargin="238" HorizontalObjectOffset="476" StartPromptOffset="238" BackColor="metrogray1" InternalLineWidth="113" Bevel="None" DirtyInfo="true" Width="10133" ScrollbarWidth="476" Height="5636" EdgePattern="none" EdgeBackColor="white"/>
+         </TabPage>
+      </Canvas>
+      <Canvas Name="POPUP_CONFIRM_CV" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_EVENT_CONFIRM">
+         <Graphics Name="TEXT306" SubclassSubObject="true" DirtyInfo="true"/>
+         <Graphics Name="TEXT309" SubclassSubObject="true" DirtyInfo="true"/>
+         <Graphics Name="TEXT312" SubclassSubObject="true" DirtyInfo="true"/>
+      </Canvas>
+      <Event Name="EVENT_CONFIRM" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_EVENT_CONFIRM"/>
+      <ModuleParameter Name="PAR_BLOCK_NAME_POPUP" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_EVENT_CONFIRM"/>
+      <ModuleParameter Name="P_IVR_CURSER_ITEM" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS"/>
+      <ModuleParameter Name="P_IVR_AREA_CODE_PHON" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS"/>
+      <ModuleParameter Name="P_IVR_PHON" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS"/>
+      <ModuleParameter Name="P_FLAG_SEARCH_C" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS"/>
+      <ModuleParameter Name="P_MUNI_SEARCH_C" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS"/>
+      <ModuleParameter Name="PAR_STR_GENERAL_MENU" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS"/>
+      <ModuleParameter Name="PAR_STR_PRIVATE_MENU" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS"/>
+      <ModuleParameter Name="PAR_QUERY_BLK" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS"/>
+      <ModuleParameter Name="PAR_BLOCK_NAME" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS"/>
+      <ModuleParameter Name="CURRENT_REC" ParameterDataType="Number"/>
+      <LOV Name="JOB_STATUS_LOV" DirtyInfo="true" RecordGroupName="JOB_STATUS_RG" ParentType="29" Title="רשימת מצבי עיבוד" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="HEB_LOV_PC">
+         <LOVColumnMapping Name="VALUE_CODE" DirtyInfo="true" Title="קוד" DisplayWidth="2001" ReturnItem="QUERY.JOB_STATUS"/>
+         <LOVColumnMapping Name="VALUE_NAME" DirtyInfo="true" Title="תיאור" DisplayWidth="8381" ReturnItem="QUERY.JOB_STATUS_DESC"/>
+      </LOV>
+      <LOV Name="PROCESS_USER_LOV" DirtyInfo="true" RecordGroupName="PROCESS_USER_RG" ParentType="29" Title="רשימת מצבי עיבוד" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="HEB_LOV_PC">
+         <LOVColumnMapping Name="USER_NAME" DirtyInfo="true" Title="קוד" DisplayWidth="2001" ReturnItem="QUERY.PROCESS_USER"/>
+         <LOVColumnMapping Name="FAMILY_NAME" DirtyInfo="true" Title="שם יוזר" DisplayWidth="4000" ReturnItem="QUERY.PROCESS_USER_DISP"/>
+      </LOV>
+      <LOV Name="TASK_LOV" YPosition="5000" XPosition="5000" DirtyInfo="true" Width="10000" RecordGroupName="RG_TASK" AutoColumnWidth="true" Title="תבחר מטלה" AutoPosition="true" Height="15000" AutoRefresh="false">
+         <LOVColumnMapping Name="TASK_SEQ" DirtyInfo="true" Title="מס' מטלה" DisplayWidth="2000" ReturnItem="QUERY.TASK_CODE"/>
+         <LOVColumnMapping Name="TASK_NAME" DirtyInfo="true" Title="שם מטלה" DisplayWidth="6000" ReturnItem="QUERY.TASK_CODE_DESC"/>
+      </LOV>
+      <LOV Name="TEMPLATE_LOV" YPosition="5000" XPosition="5000" DirtyInfo="true" Width="12000" RecordGroupName="RG_TEMPLATE" AutoColumnWidth="true" Title="תבחר איתור" AutoPosition="true" Height="6000">
+         <LOVColumnMapping Name="TEMPLATE_SEQ" DirtyInfo="true" Title="מס' איתור" DisplayWidth="2000" ReturnItem="QUERY.TEMPLATE_SEQ"/>
+         <LOVColumnMapping Name="TEMPLATE_DESC" DirtyInfo="true" Title="שם איתור" DisplayWidth="6000" ReturnItem="QUERY.TEMPLATE_DESC"/>
+         <LOVColumnMapping Name="TEMPLATE_TYPE" DirtyInfo="true" Title="סוג" DisplayWidth="2000" ReturnItem="QUERY.TEMPLATE_TYPE"/>
+      </LOV>
+      <LOV Name="ALL_STEP_NUM" DirtyInfo="true" Width="5000" RecordGroupName="R_ALL_STEP_NUM" Title="מספר שלב" AutoPosition="true" Height="10000">
+         <LOVColumnMapping Name="STEP_NUM" DirtyInfo="true" Title="מספר שלב" DisplayWidth="1905" ReturnItem="QUERY.STEP_NUM"/>
+      </LOV>
+      <LOV Name="LOV_STEP_NUM" DirtyInfo="true" Width="5000" RecordGroupName="RG_STEP_NUM" Title="מספר שלב" AutoPosition="true" Height="10000">
+         <LOVColumnMapping Name="STEP_NUM" DirtyInfo="true" Title="מספר שלב" DisplayWidth="2000" ReturnItem="QUERY.STEP_NUM"/>
+      </LOV>
+      <Menu Name="STD_MENU_VIEW" SubclassObjectGroup="true" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG">
+         <MenuItem Name="COPY" SubclassSubObject="true" DirtyInfo="true"/>
+         <MenuItem Name="CUT" SubclassSubObject="true"/>
+         <MenuItem Name="PASTE" SubclassSubObject="true"/>
+         <MenuItem Name="CLEAR" SubclassSubObject="true"/>
+         <MenuItem Name="ITEM100" SubclassSubObject="true"/>
+         <MenuItem Name="VIEW" SubclassSubObject="true" DirtyInfo="true"/>
+         <MenuItem Name="ITEM858" SubclassSubObject="true"/>
+         <MenuItem Name="PERMISSIONS" SubclassSubObject="true" DirtyInfo="true"/>
+      </Menu>
+      <ProgramUnit Name="SR_JOBS_VIEW_PKG" ProgramUnitType="Package Spec" ProgramUnitText="PACKAGE sr_jobs_view_pkg IS&amp;#10;  --&amp;#10;  PROCEDURE enable_button(v_remove  IN NUMBER,&amp;#10;                          v_broken  IN NUMBER,&amp;#10;                          v_release IN NUMBER);&amp;#10;  --&amp;#10;  PROCEDURE enable_button_param(process_name in varchar2);&amp;#10;END;"/>
+      <ProgramUnit Name="SR_JOBS_VIEW_PKG" ProgramUnitType="Package Body" ProgramUnitText="PACKAGE BODY sr_jobs_view_pkg IS&amp;#10;/* ===================================================================&amp;#10;  Date        :    08/11/1999&amp;#10;  Programmer  :    inbar abend&amp;#10;  Name        :    get_job_status_desc&amp;#10;  Description :    The Procedure Will Get Job Status Desc Due To Job&amp;#10;                   Status Code&amp;#10;  Parameters  :    None&amp;#10;=======================================================================*/&amp;#10;FUNCTION get_job_status_desc&amp;#10;          RETURN VARCHAR2  IS&amp;#10;  v_desc varchar2(100);&amp;#10;  v_status pls_integer;&amp;#10;  e_get_status exception;&amp;#10;BEGIN  &amp;#10;&#x9;--עיבוד הוסר(sr_jobs_pkg.remove_job but not kill session job_status = 7 )&amp;#10;BEGIN&#x9;&amp;#10;&#x9;/*&amp;#10;&#x9;&#x9;&#x9;&#x9;0&#x9;נשלח להרצה&amp;#10;&#x9;&#x9;&#x9;&#x9;1&#x9;ממתין לריצה&amp;#10;&#x9;&#x9;&#x9;&#x9;2&#x9;סיים ונכשל&amp;#10;&#x9;&#x9;&#x9;&#x9;3&#x9;סיים בהצלחה&amp;#10;&#x9;&#x9;&#x9;&#x9;4&#x9;לא נשלח&amp;#10;&#x9;&#x9;&#x9;&#x9;5&#x9;בריצה&amp;#10;&#x9;&#x9;&#x9;&#x9;6&#x9;נכשל (לא סיים)&amp;#10;&#x9;&#x9;&#x9;&#x9;7&#x9;עיבוד הוסר&amp;#10;&#x9;&#x9;&#x9;&#x9;8&#x9;סיים עם שגיאות&amp;#10;&#x9;&#x9;&#x9;&#x9;9&#x9;מתוזמן&amp;#10;&#x9;*/&amp;#10;&#x9;IF :sr_jobs_view.job_status IN (2,3) THEN&amp;#10;&#x9;&#x9; v_status := :sr_jobs_view.job_status;&amp;#10;      RAISE  e_get_status;&amp;#10;  END IF;   &#x9;&#x9; &amp;#10;  IF :sr_jobs_view.job_num IS NOT NULL and :sr_jobs_view.job_status not in (7,8) THEN -- בריצה&amp;#10;      v_status := 5;&amp;#10;     RAISE  e_get_status;&amp;#10;  END IF;   &amp;#10;  IF :sr_jobs_view.job_queue IS NOT NULL and :sr_jobs_view.job_status &lt;> 8&#x9;THEN -- מחכה לתורו לרוץ &amp;#10;  &#x9; v_status := 1;&amp;#10;     RAISE  e_get_status;&amp;#10;  END IF;   &amp;#10;  IF :sr_jobs_view.job_status IS NULL THEN -- לא נשלח&amp;#10; &#x9;   v_status := 4;&amp;#10;     RAISE  e_get_status;&amp;#10;  END IF;     &amp;#10;  IF :sr_jobs_view.job_status = 0 THEN -- נשלח להרצה&amp;#10; &#x9;   v_status := 0;&amp;#10;     RAISE  e_get_status;&amp;#10;  END IF ;    &amp;#10;  IF :sr_jobs_view.job_status = 1 THEN -- נכשל ולא סיים&amp;#10;  &#x9; v_status := 6;&amp;#10;     RAISE  e_get_status;&amp;#10;  END IF;     &amp;#10;&#x9;IF :sr_jobs_view.job_status = 7 THEN  --עיבוד הוסר&amp;#10;&#x9; &#x9; v_status := 7;&amp;#10;&#x9;   RAISE  e_get_status;&amp;#10;&#x9;END IF; &amp;#10; &amp;#10;  IF :sr_jobs_view.job_status = 8 THEN  --עיבוד סיים עם שגיאות&amp;#10;  &#x9; v_status := 8;&amp;#10;     RAISE  e_get_status;&amp;#10;  END IF; &amp;#10;  v_status := 6;&amp;#10;  RAISE  e_get_status;&amp;#10; EXCEPTION&amp;#10; &#x9; WHEN e_get_status THEN&amp;#10; &#x9;    v_desc  := Get_Desc_Query_Pkg.get_code_desc_query(100, v_status);&amp;#10;   WHEN OTHERS THEN&amp;#10;      NULL;&amp;#10; END;  &amp;#10;   RETURN(v_desc);&amp;#10;END;&amp;#10;/* ===============================================================================&amp;#10;  Date        :    09/11/1999&amp;#10;  Programmer  :    inbar abend&amp;#10;  Name        :    enable_button &amp;#10;  Description :    The procedure Will change buttons from enable to disable when moving&amp;#10;                   from one row to another.&amp;#10;  Parameters  :    Name        Order  Type  DataType  Description&amp;#10;                   ----------- -----  ----  --------  -----------&amp;#10;                   v_insert      1    IN     NUMBER    &amp;#10;                   v_update      2    IN     NUMBER&amp;#10;                   v_exit        3    IN     NUMBER&amp;#10;=================================================================================*/&amp;#10;PROCEDURE enable_button (v_remove  IN NUMBER,&amp;#10;                         v_broken  IN NUMBER,&amp;#10;                         v_release IN NUMBER) IS&amp;#10;BEGIN&amp;#10;&#x9;&amp;#10;    IF v_remove = 1 THEN&amp;#10;  &amp;#10;    &#x9;&amp;#10;       SET_ITEM_PROPERTY('sr_jobs_view.remove',ENABLED,PROPERTY_TRUE);&amp;#10;    ELSE&amp;#10;       SET_ITEM_PROPERTY('sr_jobs_view.remove',ENABLED,PROPERTY_FALSE);&amp;#10;       &amp;#10;    END IF;&amp;#10;&amp;#10;    IF v_broken = 1 THEN&amp;#10;&#x9;&#x9;                               &amp;#10;    &#x9;null;&amp;#10;       SET_ITEM_PROPERTY('sr_jobs_view.broken_button',ENABLED,PROPERTY_TRUE);&amp;#10;    ELSE&amp;#10;       SET_ITEM_PROPERTY('sr_jobs_view.broken_button',ENABLED,PROPERTY_FALSE);&amp;#10;     END IF;&amp;#10;&amp;#10;    IF v_release = 1 THEN&amp;#10;    &#x9;&amp;#10;&amp;#10;       SET_ITEM_PROPERTY('sr_jobs_view.release',ENABLED,PROPERTY_TRUE);&amp;#10;    ELSE&amp;#10;       SET_ITEM_PROPERTY('sr_jobs_view.release',ENABLED,PROPERTY_FALSE);&amp;#10;  &amp;#10;    END IF;&amp;#10;    &amp;#10;END;&amp;#10;---------------------------------------------------------------------&amp;#10;--tzvia 10/07/2014&amp;#10;---------------------------------------------------------------------&amp;#10; PROCEDURE enable_button_param(process_name in varchar2)&amp;#10; is&amp;#10; begin&amp;#10; &#x9;if :SR_JOBS_VIEW.TEMPLATE_NUM is not null  then&amp;#10; &#x9;&#x9;SET_ITEM_PROPERTY('sr_jobs_view.PARAM_ENFORCMENT',visible,PROPERTY_TRUE);&amp;#10; &#x9;&#x9;SET_ITEM_PROPERTY('sr_jobs_view.PARAM_ENFORCMENT',enabled,PROPERTY_TRUE);&amp;#10; &#x9;else&amp;#10; &#x9;  SET_ITEM_PROPERTY('sr_jobs_view.PARAM_ENFORCMENT',visible,PROPERTY_FALSE);&amp;#10; &#x9;end if;&amp;#10; end;&amp;#10;END;"/>
+      <ProgramUnit Name="FORM_FIRST_TIME" ProgramUnitType="Procedure" ProgramUnitText="PROCEDURE form_first_time IS&amp;#10;v_where         varchar2(300) := '1=1 ';&amp;#10;l_dummy         number;&amp;#10;BEGIN&amp;#10;  t.progStart('form_first_time');&amp;#10;  :TITLE.ENTERANCE_MODE := ' ';&amp;#10;  DEFAULT_VALUE(NULL,'GLOBAL.PROCESS_SEQ');&amp;#10;  sr_jobs_view_pkg.enable_button (0,0,0);&amp;#10;  sr_jobs_view_pkg.enable_button_param(:sr_jobs_view.process_name);&amp;#10;  IF :global.calling_form IN(924) THEN&amp;#10;   &#x9;  :query.process_seq := :global.process_seq;&amp;#10;   &#x9;  v_where:=v_where||'and process_seq= '||:global.process_seq;&amp;#10;   &#x9;     SET_BLOCK_PROPERTY('RM_PROCESS_PARAM', DEFAULT_WHERE, v_where);&amp;#10;   &#x9;     :parameter.current_rec:=1;&amp;#10;   &#x9;  GO_BLOCK('RM_PROCESS_PARAM');&amp;#10;    &#x9;EXECUTE_QUERY;&amp;#10;  else&amp;#10;&#x9;  GO_ITEM('QUERY.PROC_BEGIN_DATE');&amp;#10;&#x9;  IF :global.process_seq IS NOT NULL THEN&amp;#10;&#x9;     :query.process_seq := :global.process_seq;&amp;#10;&#x9;     GO_BLOCK('sr_jobs_view');&amp;#10;&#x9;     EXECUTE_QUERY;&amp;#10;&#x9;     IF :sr_jobs_view.process_seq IS NOT NULL THEN&amp;#10;&#x9;&#x9;  &#x9;  GO_BLOCK('RM_PROCESS_PARAM_SUM');&amp;#10;&#x9;&#x9;    &#x9;EXECUTE_QUERY;&amp;#10;&#x9;&#x9;    &#x9;GO_BLOCK('sr_jobs_view');&amp;#10;&#x9;     END IF;&amp;#10;&#x9;  END IF;&amp;#10;  end if;&amp;#10;&amp;#10;  :query.proc_begin_date := trunc(sysdate);&amp;#10;&amp;#10;  t.progEnd('form_first_time');&amp;#10; END;"/>
+      <ProgramUnit Name="FORM_PKG" SubclassObjectGroup="true" ProgramUnitType="Package Body" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="FORM_PKG" SubclassObjectGroup="true" ProgramUnitType="Package Spec" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="CHECK_IF_NULL" SubclassObjectGroup="true" ProgramUnitType="Function" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="POPULATE_LIST_WITH_QUERY" SubclassObjectGroup="true" ProgramUnitType="Procedure" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="PERFORM_FOR_ALL" SubclassObjectGroup="true" ProgramUnitType="Procedure" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="T" SubclassObjectGroup="true" ProgramUnitType="Package Body" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="D" SubclassObjectGroup="true" ProgramUnitType="Package Body" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="D" SubclassObjectGroup="true" ProgramUnitType="Package Spec" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="T" SubclassObjectGroup="true" ProgramUnitType="Package Spec" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="T_DEBUG" SubclassObjectGroup="true" ProgramUnitType="Package Body" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="T_DEBUG" SubclassObjectGroup="true" ProgramUnitType="Package Spec" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <ProgramUnit Name="TIMER_EXPIRATION" ProgramUnitType="Procedure" ProgramUnitText="PROCEDURE TIMER_EXPIRATION IS&amp;#10;&#x9;  timer_id         TIMER;&amp;#10;    last_record_n    number;&amp;#10;    current_record_n number;&amp;#10;    one_second NUMBER := 1000;&amp;#10;BEGIN&amp;#10;&#x9; if GET_APPLICATION_PROPERTY(TIMER_NAME) = 'REFRESH_TIMER' then&amp;#10;--&#x9;   t.progStart('TIMER_EXPIRATION');&amp;#10;--&#x9;   d.p('timer '||:QUERY.REFRESH_TIME);&amp;#10;  &#x9; GO_BLOCK('sr_jobs_view');&amp;#10;&#x9;   last_record_n := get_block_property(:system.current_block,TOP_RECORD) + &amp;#10;&#x9;                     get_block_property(:system.current_block,RECORDS_DISPLAYED) - 1;&amp;#10;&#x9;   current_record_n := name_in('SYSTEM.CURSOR_RECORD');&amp;#10;  &#x9; execute_query;&amp;#10;&#x9;   go_record(last_record_n);  -- Restore display (multi-record blocks)&amp;#10;&#x9;   go_record(current_record_n);  -- Restore cursor&amp;#10;&amp;#10;&#x9;   if :QUERY.REFRESH_TIME is not null then &amp;#10;&#x9;     timer_id := CREATE_TIMER('REFRESH_TIMER',(one_second*:QUERY.REFRESH_TIME),NO_REPEAT);&amp;#10;&#x9;   end if;&amp;#10;--&#x9;   t.progEnd('TIMER_EXPIRATION');&amp;#10;&#x9; end if;&amp;#10;END;"/>
+      <ProgramUnit Name="CHECK_PACKAGE_FAILURE" ProgramUnitType="Procedure" ProgramUnitText="Procedure Check_Package_Failure IS&amp;#10;BEGIN&amp;#10;  IF NOT ( Form_Success ) THEN&amp;#10;    RAISE Form_Trigger_Failure;&amp;#10;  END IF;&amp;#10;END;"/>
+      <ProgramUnit Name="QUERY_MASTER_DETAILS" ProgramUnitType="Procedure" ProgramUnitText="PROCEDURE Query_Master_Details(rel_id Relation,detail VARCHAR2) IS&amp;#10;  oldmsg VARCHAR2(2);  -- Old Message Level Setting&amp;#10;  reldef VARCHAR2(5);  -- Relation Deferred Setting&amp;#10;BEGIN&amp;#10;  --&amp;#10;  -- Initialize Local Variable(s)&amp;#10;  --&amp;#10;  reldef := Get_Relation_Property(rel_id, DEFERRED_COORDINATION);&amp;#10;  oldmsg := :System.Message_Level;&amp;#10;  --&amp;#10;  -- If NOT Deferred, Goto detail and execute the query.&amp;#10;  --&amp;#10;  IF reldef = 'FALSE' THEN&amp;#10;    Go_Block(detail);&amp;#10;    Check_Package_Failure;&amp;#10;    :System.Message_Level := '10';&amp;#10;    Execute_Query;&amp;#10;    :System.Message_Level := oldmsg;&amp;#10;  ELSE&amp;#10;    --&amp;#10;    -- Relation is deferred, mark the detail block as un-coordinated&amp;#10;    --&amp;#10;    Set_Block_Property(detail, COORDINATION_STATUS, NON_COORDINATED);&amp;#10;  END IF;&amp;#10;&amp;#10;EXCEPTION&amp;#10;    WHEN Form_Trigger_Failure THEN&amp;#10;      :System.Message_Level := oldmsg;&amp;#10;      RAISE;&amp;#10;END Query_Master_Details;&amp;#10;"/>
+      <ProgramUnit Name="CLEAR_ALL_MASTER_DETAILS" ProgramUnitType="Procedure" ProgramUnitText="PROCEDURE Clear_All_Master_Details IS&amp;#10;  mastblk  VARCHAR2(30);  -- Initial Master Block Causing Coord&amp;#10;  coordop  VARCHAR2(30);  -- Operation Causing the Coord&amp;#10;  trigblk  VARCHAR2(30);  -- Cur Block On-Clear-Details Fires On&amp;#10;  startitm VARCHAR2(61);  -- Item in which cursor started&amp;#10;  frmstat  VARCHAR2(15);  -- Form Status&amp;#10;  curblk   VARCHAR2(30);  -- Current Block&amp;#10;  currel   VARCHAR2(30);  -- Current Relation&amp;#10;  curdtl   VARCHAR2(30);  -- Current Detail Block&amp;#10;&amp;#10;  FUNCTION First_Changed_Block_Below(Master VARCHAR2)&amp;#10;  RETURN VARCHAR2 IS&amp;#10;    curblk VARCHAR2(30);  -- Current Block&amp;#10;    currel VARCHAR2(30);  -- Current Relation&amp;#10;    retblk VARCHAR2(30);  -- Return Block&amp;#10;  BEGIN&amp;#10;    --&amp;#10;    -- Initialize Local Vars&amp;#10;    --&amp;#10;    curblk := Master;&amp;#10;    currel := Get_Block_Property(curblk,  FIRST_MASTER_RELATION);&amp;#10;    --&amp;#10;    -- While there exists another relation for this block&amp;#10;    --&amp;#10;    WHILE currel IS NOT NULL LOOP&amp;#10;      --&amp;#10;      -- Get the name of the detail block&amp;#10;      --&amp;#10;      curblk := Get_Relation_Property(currel, DETAIL_NAME);&amp;#10;      --&amp;#10;      -- If this block has changes, return its name&amp;#10;      --&amp;#10;      IF ( Get_Block_Property(curblk, STATUS) = 'CHANGED' ) THEN&amp;#10;        RETURN curblk;&amp;#10;      ELSE&amp;#10;        --&amp;#10;        -- No changes, recursively look for changed blocks below&amp;#10;        --&amp;#10;        retblk := First_Changed_Block_Below(curblk);&amp;#10;        --&amp;#10;        -- If some block below is changed, return its name&amp;#10;        --&amp;#10;        IF retblk IS NOT NULL THEN&amp;#10;          RETURN retblk;&amp;#10;        ELSE&amp;#10;          --&amp;#10;          -- Consider the next relation&amp;#10;          --&amp;#10;          currel := Get_Relation_Property(currel, NEXT_MASTER_RELATION);&amp;#10;        END IF;&amp;#10;      END IF;&amp;#10;    END LOOP;&amp;#10;&amp;#10;    --&amp;#10;    -- No changed blocks were found&amp;#10;    --&amp;#10;    RETURN NULL;&amp;#10;  END First_Changed_Block_Below;&amp;#10;&amp;#10;BEGIN&amp;#10;  --&amp;#10;  -- Init Local Vars&amp;#10;  --&amp;#10;  mastblk  := :System.Master_Block;&amp;#10;  coordop  := :System.Coordination_Operation;&amp;#10;  trigblk  := :System.Trigger_Block;&amp;#10;  startitm := :System.Cursor_Item;&amp;#10;  frmstat  := :System.Form_Status;&amp;#10;&amp;#10;  --&amp;#10;  -- If the coordination operation is anything but CLEAR_RECORD or&amp;#10;  -- SYNCHRONIZE_BLOCKS, then continue checking.&amp;#10;  --&amp;#10;  IF coordop NOT IN ('CLEAR_RECORD', 'SYNCHRONIZE_BLOCKS') THEN&amp;#10;    --&amp;#10;    -- If we're processing the driving master block...&amp;#10;    --&amp;#10;    IF mastblk = trigblk THEN&amp;#10;      --&amp;#10;      -- If something in the form is changed, find the&amp;#10;      -- first changed block below the master&amp;#10;      --&amp;#10;      IF frmstat = 'CHANGED' THEN&amp;#10;        curblk := First_Changed_Block_Below(mastblk);&amp;#10;        --&amp;#10;        -- If we find a changed block below, go there&amp;#10;        -- and Ask to commit the changes.&amp;#10;        --&amp;#10;        IF curblk IS NOT NULL THEN&amp;#10;          Go_Block(curblk);&amp;#10;          Check_Package_Failure;&amp;#10;          Clear_Block(ASK_COMMIT);&amp;#10;          --&amp;#10;          -- If user cancels commit dialog, raise error&amp;#10;          --&amp;#10;          IF NOT ( :System.Form_Status = 'QUERY'&amp;#10;                   OR :System.Block_Status = 'NEW' ) THEN&amp;#10;            RAISE Form_Trigger_Failure;&amp;#10;          END IF;&amp;#10;        END IF;&amp;#10;      END IF;&amp;#10;    END IF;&amp;#10;  END IF;&amp;#10;&amp;#10;  --&amp;#10;  -- Clear all the detail blocks for this master without&amp;#10;  -- any further asking to commit.&amp;#10;  --&amp;#10;  currel := Get_Block_Property(trigblk, FIRST_MASTER_RELATION);&amp;#10;  WHILE currel IS NOT NULL LOOP&amp;#10;    curdtl := Get_Relation_Property(currel, DETAIL_NAME);&amp;#10;    IF Get_Block_Property(curdtl, STATUS) &lt;> 'NEW'  THEN&amp;#10;      Go_Block(curdtl);&amp;#10;      Check_Package_Failure;&amp;#10;      Clear_Block(NO_VALIDATE);&amp;#10;      IF :System.Block_Status &lt;> 'NEW' THEN&amp;#10;        RAISE Form_Trigger_Failure;&amp;#10;      END IF;&amp;#10;    END IF;&amp;#10;    currel := Get_Relation_Property(currel, NEXT_MASTER_RELATION);&amp;#10;  END LOOP;&amp;#10;&amp;#10;  --&amp;#10;  -- Put cursor back where it started&amp;#10;  --&amp;#10;  IF :System.Cursor_Item &lt;> startitm THEN&amp;#10;    Go_Item(startitm);&amp;#10;    Check_Package_Failure;&amp;#10;  END IF;&amp;#10;&amp;#10;EXCEPTION&amp;#10;  WHEN Form_Trigger_Failure THEN&amp;#10;    IF :System.Cursor_Item &lt;> startitm THEN&amp;#10;      Go_Item(startitm);&amp;#10;    END IF;&amp;#10;    RAISE;&amp;#10;&amp;#10;END Clear_All_Master_Details;&amp;#10;"/>
+      <ProgramUnit Name="PREV_REC" SubclassObjectGroup="true" ProgramUnitType="Procedure" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <ProgramUnit Name="NEXT_REC" SubclassObjectGroup="true" ProgramUnitType="Procedure" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <ProgramUnit Name="HANDLE_PERMITS" SubclassObjectGroup="true" ProgramUnitType="Procedure" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <PropertyClass Name="SEARCH_CLIENT_BUT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS">
+         <Trigger Name="WHEN-BUTTON-PRESSED" SubclassSubObject="true" DirtyInfo="true"/>
+      </PropertyClass>
+      <PropertyClass Name="TEXT_ITEM_HEB_CENTER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BACKGROUND_ITEM" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_REQ_LIST_ITEM_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="PRIVATE_MENU_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_CHECK_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_LOV_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_ORDER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_CALANDER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="TAB_CANVAS_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_ADD_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_UPDATE_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_SAVE_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_EXIT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_CANCEL_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_PRINT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_SHOW_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="FOR_UPDATE_CV_FRAME" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="IN_RED_RADIO_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="IN_RED_CHECK_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SECONDARY_CANVAS_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SECONDARY_WIN_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISPLAY_SPECIAL_CODE" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_RADIO_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SUM_NUMBER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SUM_NUM_INT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SUM_ITEM_HEB_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SUM_ITEM_ENG_UPPER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SUM_ITEM_ENG_LOWER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SUM_ITEM_ENG_MIXED_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SUM_DATE_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="LIST_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="RADIO_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="FIELD_FRAME_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_NUMBER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_NUM_INT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_CODE_4INT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_TXT_ITEM_ENG_UPPER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_TXT_ITEM_ENG_LOWER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_TXT_ITEM_ENG_MIXED_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_TEXT_ITEM_HEB_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_CHECK_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_RADIO_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_LIST_ITEM_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_REQ_NUMBER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_REQ_NUM_INT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_REQ_CODE_4INT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_REQ_ITEM_ENG_UPPER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_REQ_ITEM_ENG_LOWER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_REQ_ITEM_ENG_MIXED_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_REQ_ITEM_HEB_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_REQ_CHECK_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="SB_REQ_YYYY_CAL_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS">
+         <Trigger Name="WHEN-MOUSE-DOUBLECLICK" SubclassSubObject="true" DirtyInfo="true"/>
+      </PropertyClass>
+      <PropertyClass Name="DISP_DATE_PC" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISPLAY_ACTION_CODE" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_NUMBER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_NUM_INT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_CODE_4INT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_NUMBER_COLOR_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_NUM_INT_COLOR_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_CODE_4INT_COLOR_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="NUM_INT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISPLAY_DATE_COLOR_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="NUMBER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_LARGE_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="TXT_ITEM_HEB_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="TXT_ITEM_ENG_UPPER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="TXT_ITEM_ENG_LOWER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="TXT_ITEM_ENG_MIXED_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_ITEM_HEB_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_ITEM_HEB_COLOR" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_ITEM_ENG_UPPER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_ITEM_ENG_UPPER_COLOR" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_ITEM_ENG_LOWER_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_ITEM_ENG_LOWER_COLOR" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_ITEM_ENG_MIXED_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="DISP_ITEM_ENG_MIXED_COLOR" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="TXT_DATE_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="ALERT_TEXT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="BUTTON_SMALL_TEXT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="ICON_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="CHECK_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="CONTENT_CANVAS_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="ENG_LOV_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="HEB_LOV_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="ICON_SMALL_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="STAMP_DATE_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <PropertyClass Name="YYYY_CAL_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS">
+         <Trigger Name="WHEN-MOUSE-DOUBLECLICK" SubclassSubObject="true" DirtyInfo="true"/>
+      </PropertyClass>
+      <PropertyClass Name="CODE_4INT_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS"/>
+      <RecordGroup Name="RG_TASK" DirtyInfo="true" RecordGroupType="Query" RecordGroupQuery="select t.task_seq,t.task_name from sr_task_codes t&amp;#10;where t.stamp_action &lt;> 'D'&amp;#10;order by 1 desc" RecordGroupFetchSize="0">
+         <RecordGroupColumn Name="TASK_SEQ" MaximumLength="23" DirtyInfo="true" ColumnDataType="Number" DataLengthSemantics="Null"/>
+         <RecordGroupColumn Name="TASK_NAME" MaximumLength="40" DirtyInfo="true" ColumnDataType="Character" DataLengthSemantics="BYTE"/>
+      </RecordGroup>
+      <RecordGroup Name="RG_STEP_NUM" DirtyInfo="true" RecordGroupType="Query" RecordGroupQuery="select DISTINCT r.step_num &amp;#10;from RM_PROCESSES r &amp;#10;where r.task_seq=:QUERY.TASK_CODE&amp;#10;and r.stamp_action &lt;> 'D'&amp;#10;order by r.step_num&amp;#10;" RecordGroupFetchSize="0">
+         <RecordGroupColumn Name="STEP_NUM" MaximumLength="23" DirtyInfo="true" ColumnDataType="Number" DataLengthSemantics="Null"/>
+      </RecordGroup>
+      <RecordGroup Name="RG_TEMPLATE" DirtyInfo="true" RecordGroupType="Query" RecordGroupQuery="select * from (&amp;#10;select template_seq, template_desc, r.first_name||' '||r.family_name username,'יתרות' template_type, f.stamp_user&amp;#10;  from rm_templates f, rm_users r&amp;#10; where f.stamp_action &lt;> 'D'&amp;#10;   and template_desc not like '~temp_%'&amp;#10;   and template_desc is not null&amp;#10;   and r.user_name(+) = f.stamp_user&amp;#10;union all&amp;#10;select template_NUM, template_desc, r.first_name||' '||r.family_name username,'אכיפה' template_type,f.stamp_user&amp;#10;  from fr_template_search f, rm_users r&amp;#10; where f.stamp_action &lt;> 'D'&amp;#10;   and template_desc not like '~temp_%'&amp;#10;   and template_desc is not null&amp;#10;   and r.user_name(+) = f.stamp_user)&amp;#10; order by 1 desc" RecordGroupFetchSize="0">
+         <RecordGroupColumn Name="TEMPLATE_SEQ" MaximumLength="23" DirtyInfo="true" ColumnDataType="Number" DataLengthSemantics="Null"/>
+         <RecordGroupColumn Name="TEMPLATE_DESC" MaximumLength="200" DirtyInfo="true" ColumnDataType="Character" DataLengthSemantics="BYTE"/>
+         <RecordGroupColumn Name="USERNAME" MaximumLength="36" DirtyInfo="true" ColumnDataType="Character" DataLengthSemantics="BYTE"/>
+         <RecordGroupColumn Name="TEMPLATE_TYPE" MaximumLength="5" DirtyInfo="true" ColumnDataType="Character" DataLengthSemantics="BYTE"/>
+         <RecordGroupColumn Name="STAMP_USER" MaximumLength="15" DirtyInfo="true" ColumnDataType="Character" DataLengthSemantics="BYTE"/>
+      </RecordGroup>
+      <RecordGroup Name="GENERAL_GROUP" SubclassObjectGroup="true" DirtyInfo="true" RecordGroupFetchSize="0" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <RecordGroup Name="JOB_STATUS_RG" DirtyInfo="true" RecordGroupType="Query" RecordGroupQuery="select value_code, value_name from rm_decode_values where decode_code = 100" RecordGroupFetchSize="0">
+         <RecordGroupColumn Name="VALUE_CODE" MaximumLength="23" DirtyInfo="true" ColumnDataType="Number" DataLengthSemantics="Null"/>
+         <RecordGroupColumn Name="VALUE_NAME" MaximumLength="40" DirtyInfo="true" ColumnDataType="Character" DataLengthSemantics="BYTE"/>
+      </RecordGroup>
+      <RecordGroup Name="PROCESS_USER_RG" DirtyInfo="true" RecordGroupType="Query" RecordGroupQuery="select t.user_name,t.first_name||' '||t.family_name  family_name from rm_users t&amp;#10;order by 2" RecordGroupFetchSize="0">
+         <RecordGroupColumn Name="USER_NAME" MaximumLength="15" DirtyInfo="true" ColumnDataType="Character" DataLengthSemantics="BYTE"/>
+         <RecordGroupColumn Name="FAMILY_NAME" MaximumLength="36" DirtyInfo="true" ColumnDataType="Character" DataLengthSemantics="BYTE"/>
+      </RecordGroup>
+      <RecordGroup Name="R_ALL_STEP_NUM" DirtyInfo="true" RecordGroupType="Query" RecordGroupQuery="select DISTINCT t.step_num &amp;#10;from RM_PROCESSES t&amp;#10;where t.stamp_action &lt;> 'D'&amp;#10;ORDER BY t.step_num &amp;#10;" RecordGroupFetchSize="0">
+         <RecordGroupColumn Name="STEP_NUM" MaximumLength="23" DirtyInfo="true" ColumnDataType="Number" DataLengthSemantics="Null"/>
+      </RecordGroup>
+      <Trigger Name="WHEN-EVENT-RAISED" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_EVENT_CONFIRM"/>
+      <Trigger Name="KEY-F1" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="WHEN-MOUSE-CLICK" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="WHEN-NEW-FORM-INSTANCE" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-F3" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-F4" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="WHEN-MOUSE-DOUBLECLICK" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="WHEN-WINDOW-ACTIVATED" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="WHEN-TIMER-EXPIRED" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-EXIT" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-ENTQRY" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-EXEQRY" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-CLRFRM" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="ENTER_QRY" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="CLEAR_BLK" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-CLRBLK" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="ON-ERROR" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="ON-MESSAGE" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-DELREC" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-CREREC" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-UPDREC" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-NXTBLK" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-PRVBLK" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-F5" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS"/>
+      <Trigger Name="KEY-CLRREC" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <Trigger Name="WHEN-WINDOW-DEACTIVATED" TriggerText="   IF NOT ID_NULL(FIND_TIMER('REFRESH_TIMER')) THEN&amp;#10;     DELETE_TIMER('REFRESH_TIMER');&amp;#10;     :QUERY.REFRESH_TIME := null;&amp;#10;   END IF;    &amp;#10;" DirtyInfo="true"/>
+      <Trigger Name="ON-CLEAR-DETAILS" TriggerText="--&amp;#10;-- Begin default relation program section&amp;#10;--&amp;#10;BEGIN&amp;#10;  Clear_All_Master_Details;&amp;#10;END;&amp;#10;--&amp;#10;-- End default relation program section&amp;#10;--&amp;#10;" DirtyInfo="true"/>
+      <VisualAttribute Name="VA_CURR_UNDERLINE" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_CURRENT_RECORD_UNDERLINE" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_CURR_RECORD_SPECIAL_ITEM" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_CURR_RECORD_RED_ITEM" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_RED_HEADER" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_TAB_CANVAS" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_DISPLAY_IN_RED_FRAME" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_SPECIAL_ITEM" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_ITEM_IN_SUM_ROW" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_SB_RADIO_CHECK_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_RADIO_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_CHECK_PC" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_LOV" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_ITEM_NOT_IN_ROW" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_ALERT" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_BUTTON" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_CONTENT_CANVAS" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_CURRENT_RECORD" BackColor="r75g100b100" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_EDITOR" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_ITEM" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_CURRENT_NOTFUCUS" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_CURRENT_ACTION" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_CURRENT_ACTION_NOTF" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_ACTION_ITEM" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_REQ_ITEM" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_DISPLAY_ITEM" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT"/>
+      <VisualAttribute Name="VA_CURRNT" FontWeight="Bold" BackColor="r75g100b88" FontStyle="Outline" ForegroundColor="blue" FontSpacing="Normal" FontSize="1100" FontName="Monotype Sorts" FillPattern="transparent"/>
+      <VisualAttribute Name="VA_RUN" BackColor="darkgreen" DirtyInfo="true"/>
+      <VisualAttribute Name="VA_SCHEDULE" BackColor="darkblue" ForegroundColor="gray96" DirtyInfo="true"/>
+      <VisualAttribute Name="VA_FAILURE" BackColor="red" DirtyInfo="true"/>
+      <VisualAttribute Name="VA_FAILURE_NOT_FINISHED" BackColor="darkred" DirtyInfo="true"/>
+      <VisualAttribute Name="VA_CANCELED" BackColor="magenta" ForegroundColor="red" DirtyInfo="true"/>
+      <VisualAttribute Name="VA_WAIT" BackColor="yellow" DirtyInfo="true"/>
+      <VisualAttribute Name="VA_FINISHED" FontWeight="Bold" BackColor="darkgray" ForegroundColor="black" DirtyInfo="true"/>
+      <VisualAttribute Name="VA_INDICATOR" BackColor="metroblue1" DirtyInfo="true"/>
+      <Window Name="POPUP_CONFIRM_WIN" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_EVENT_CONFIRM"/>
+      <Window Name="IVR_PHON" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_WINDOWS"/>
+      <Window Name="T_DEBUG" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG"/>
+      <Window Name="WINDOW1" SubclassObjectGroup="true" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_WINDOWS"/>
+      <Window Name="HELP_WIN" SubclassObjectGroup="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_WINDOWS"/>
+      <Window Name="PARAMS_WIN" MaximizeAllowed="false" ClearAllowed="false" YPosition="2000" MinimizeAllowed="false" HideOnExit="true" XPosition="4000" Title="פרמטרים לעיבוד" ResizeAllowed="false" ParentModule="SR_JOBS_VIEW" ParentModuleType="12" ParentName="SECONDARY_WIN_PC" MoveAllowed="true" DirtyInfo="true" Width="17000" ParentType="29" Height="11430" Modal="true" PrimaryCanvas="PARAMS_CV"/>
+      <ObjectGroup Name="OBJ_EVENT_CONFIRM" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_EVENT_CONFIRM">
+         <ObjectGroupChild Name="POPUP_CONFIRM" SubclassSubObject="true" Type="Block"/>
+         <ObjectGroupChild Name="POPUP_CONFIRM_CV" SubclassSubObject="true" Type="Canvas"/>
+         <ObjectGroupChild Name="WHEN-EVENT-RAISED" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="POPUP_CONFIRM_WIN" SubclassSubObject="true" Type="Window"/>
+         <ObjectGroupChild Name="EVENT_CONFIRM" SubclassSubObject="true" Type="Event"/>
+         <ObjectGroupChild Name="PAR_BLOCK_NAME_POPUP" SubclassSubObject="true" Type="ModuleParameter"/>
+      </ObjectGroup>
+      <ObjectGroup Name="OBJ_TRIGGERS" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_TRIGGERS">
+         <ObjectGroupChild Name="KEY-F1" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="WHEN-MOUSE-CLICK" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="WHEN-NEW-FORM-INSTANCE" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-F3" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="HANDLE_PERMITS" SubclassSubObject="true" ProgramUnitType="Procedure" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="NEXT_REC" SubclassSubObject="true" ProgramUnitType="Procedure" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="PREV_REC" SubclassSubObject="true" ProgramUnitType="Procedure" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="KEY-F4" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="WHEN-MOUSE-DOUBLECLICK" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="WHEN-WINDOW-ACTIVATED" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="WHEN-TIMER-EXPIRED" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-EXIT" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-ENTQRY" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-EXEQRY" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-CLRFRM" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="ENTER_QRY" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="CLEAR_BLK" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-CLRBLK" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="ON-ERROR" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="ON-MESSAGE" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-DELREC" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-CREREC" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-UPDREC" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-NXTBLK" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-PRVBLK" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="KEY-F5" SubclassSubObject="true" Type="Trigger"/>
+      </ObjectGroup>
+      <ObjectGroup Name="CANVAS_1" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_1">
+         <ObjectGroupChild Name="MAIN_CV_1" SubclassSubObject="true" Type="Canvas"/>
+      </ObjectGroup>
+      <ObjectGroup Name="CANVAS_WITHOUT_SEARCH" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="CANVAS_WITHOUT_SEARCH">
+         <ObjectGroupChild Name="GENERAL" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="STOP_1" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="STOP_2" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="STOP_3" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="CAUTION_1" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="CAUTION_2" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="CAUTION_3" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="NOTE_1" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="NOTE_2" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="NOTE_3" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="MAIN_CV_WITHOUT_SEARCH" SubclassSubObject="true" Type="Canvas"/>
+      </ObjectGroup>
+      <ObjectGroup Name="OBJ_ALERTS" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_ALERTS">
+         <ObjectGroupChild Name="GENERAL" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="STOP_1" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="STOP_2" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="STOP_3" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="CAUTION_1" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="CAUTION_2" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="CAUTION_3" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="NOTE_1" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="NOTE_2" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="NOTE_3" SubclassSubObject="true" Type="Alert"/>
+      </ObjectGroup>
+      <ObjectGroup Name="OBJ_CLASS" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CLASS">
+         <ObjectGroupChild Name="TEXT_ITEM_HEB_CENTER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SEARCH_CLIENT_BUT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BACKGROUND_ITEM" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="ALERT_TEXT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_LARGE_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_SMALL_TEXT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_ADD_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_UPDATE_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_SAVE_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_EXIT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_CANCEL_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_LOV_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_PRINT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_SHOW_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_ORDER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="BUTTON_CALANDER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="CHECK_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="CODE_4INT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="CONTENT_CANVAS_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_CODE_4INT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_DATE_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_ITEM_HEB_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_ITEM_ENG_UPPER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_ITEM_ENG_LOWER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_ITEM_ENG_MIXED_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_NUMBER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_NUM_INT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_CHECK_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_RADIO_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_NUMBER_COLOR_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_NUM_INT_COLOR_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_CODE_4INT_COLOR_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_ITEM_HEB_COLOR" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_ITEM_ENG_UPPER_COLOR" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_ITEM_ENG_LOWER_COLOR" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISP_ITEM_ENG_MIXED_COLOR" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISPLAY_DATE_COLOR_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISPLAY_ACTION_CODE" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="DISPLAY_SPECIAL_CODE" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="ENG_LOV_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="FIELD_FRAME_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="FOR_UPDATE_CV_FRAME" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="IN_RED_RADIO_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="IN_RED_CHECK_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="HEB_LOV_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="LIST_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="NUM_INT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="NUMBER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="RADIO_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="PRIVATE_MENU_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_CHECK_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_CODE_4INT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_NUMBER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_NUM_INT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_RADIO_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_TEXT_ITEM_HEB_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_TXT_ITEM_ENG_UPPER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_TXT_ITEM_ENG_LOWER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_TXT_ITEM_ENG_MIXED_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_LIST_ITEM_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_REQ_NUMBER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_REQ_NUM_INT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_REQ_CODE_4INT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_REQ_ITEM_ENG_UPPER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_REQ_ITEM_ENG_LOWER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_REQ_ITEM_ENG_MIXED_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_REQ_ITEM_HEB_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_REQ_CHECK_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_REQ_YYYY_CAL_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SB_REQ_LIST_ITEM_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="STAMP_DATE_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SUM_NUMBER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SUM_NUM_INT_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SUM_ITEM_HEB_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SUM_ITEM_ENG_UPPER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SUM_ITEM_ENG_LOWER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SUM_ITEM_ENG_MIXED_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SUM_DATE_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SECONDARY_CANVAS_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="SECONDARY_WIN_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="TAB_CANVAS_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="TXT_ITEM_HEB_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="TXT_ITEM_ENG_UPPER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="TXT_ITEM_ENG_LOWER_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="TXT_ITEM_ENG_MIXED_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="TXT_DATE_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="YYYY_CAL_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="ICON_PC" SubclassSubObject="true" Type="PropertyClass"/>
+         <ObjectGroupChild Name="ICON_SMALL_PC" SubclassSubObject="true" Type="PropertyClass"/>
+      </ObjectGroup>
+      <ObjectGroup Name="OBJ_VISUAL_ATT" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_VISUAL_ATT">
+         <ObjectGroupChild Name="VA_CURR_UNDERLINE" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_CURR_RECORD_SPECIAL_ITEM" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_CURR_RECORD_RED_ITEM" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_RED_HEADER" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_TAB_CANVAS" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_ALERT" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_BUTTON" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_CONTENT_CANVAS" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_CURRENT_RECORD" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_EDITOR" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_ITEM" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_CHECK_PC" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_RADIO_PC" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_SB_RADIO_CHECK_PC" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_LOV" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_CURRENT_NOTFUCUS" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_CURRENT_ACTION" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_CURRENT_ACTION_NOTF" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_ACTION_ITEM" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_SPECIAL_ITEM" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_REQ_ITEM" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_DISPLAY_ITEM" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_DISPLAY_IN_RED_FRAME" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_ITEM_NOT_IN_ROW" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_ITEM_IN_SUM_ROW" SubclassSubObject="true" Type="VisualAttribute"/>
+         <ObjectGroupChild Name="VA_CURRENT_RECORD_UNDERLINE" SubclassSubObject="true" Type="VisualAttribute"/>
+      </ObjectGroup>
+      <ObjectGroup Name="OBJ_WINDOWS" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_WINDOWS">
+         <ObjectGroupChild Name="IVR_PHON" SubclassSubObject="true" Type="Window"/>
+         <ObjectGroupChild Name="WINDOW1" SubclassSubObject="true" Type="Window"/>
+         <ObjectGroupChild Name="HELP_WIN" SubclassSubObject="true" Type="Window"/>
+      </ObjectGroup>
+      <ObjectGroup Name="OBJ_CANVAS" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_CANVAS">
+         <ObjectGroupChild Name="IVR_PHON" SubclassSubObject="true" Type="Canvas"/>
+         <ObjectGroupChild Name="HELP_CAN" SubclassSubObject="true" Type="Canvas"/>
+         <ObjectGroupChild Name="TOOLBAR" SubclassSubObject="true" Type="Canvas"/>
+      </ObjectGroup>
+      <ObjectGroup Name="OBJ_BLOCKS" DirtyInfo="true" ParentType="23" ParentFilename="METRO10.olb" ParentModule="METRO10" ParentModuleType="25" ParentName="OBJ_BLOCKS">
+         <ObjectGroupChild Name="IVR_RM_PHON" SubclassSubObject="true" Type="Block"/>
+         <ObjectGroupChild Name="TOOLBAR" SubclassSubObject="true" Type="Block"/>
+         <ObjectGroupChild Name="P_IVR_CURSER_ITEM" SubclassSubObject="true" Type="ModuleParameter"/>
+         <ObjectGroupChild Name="P_IVR_AREA_CODE_PHON" SubclassSubObject="true" Type="ModuleParameter"/>
+         <ObjectGroupChild Name="P_IVR_PHON" SubclassSubObject="true" Type="ModuleParameter"/>
+         <ObjectGroupChild Name="TITLE" SubclassSubObject="true" Type="Block"/>
+         <ObjectGroupChild Name="PAR_BLOCK_NAME" SubclassSubObject="true" Type="ModuleParameter"/>
+         <ObjectGroupChild Name="PAR_STR_GENERAL_MENU" SubclassSubObject="true" Type="ModuleParameter"/>
+         <ObjectGroupChild Name="PAR_STR_PRIVATE_MENU" SubclassSubObject="true" Type="ModuleParameter"/>
+         <ObjectGroupChild Name="P_FLAG_SEARCH_C" SubclassSubObject="true" Type="ModuleParameter"/>
+         <ObjectGroupChild Name="P_MUNI_SEARCH_C" SubclassSubObject="true" Type="ModuleParameter"/>
+         <ObjectGroupChild Name="PAR_QUERY_BLK" SubclassSubObject="true" Type="ModuleParameter"/>
+         <ObjectGroupChild Name="HELP_BLK" SubclassSubObject="true" Type="Block"/>
+      </ObjectGroup>
+      <ObjectGroup Name="T_DEBUG" DirtyInfo="true" ParentType="23" ParentFilename="BA_OLB.olb" ParentModule="BA_OLB" ParentModuleType="25" ParentName="T_DEBUG">
+         <ObjectGroupChild Name="KEY-CLRREC" SubclassSubObject="true" Type="Trigger"/>
+         <ObjectGroupChild Name="T_DEBUG" SubclassSubObject="true" Type="Canvas"/>
+         <ObjectGroupChild Name="DYNAMIC_STOP" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="T_DEBUG" SubclassSubObject="true" Type="Alert"/>
+         <ObjectGroupChild Name="T_DEBUG" SubclassSubObject="true" Type="Window"/>
+         <ObjectGroupChild Name="T_DEBUG" SubclassSubObject="true" Type="Block"/>
+         <ObjectGroupChild Name="D" SubclassSubObject="true" ProgramUnitType="Package Spec" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="D" SubclassSubObject="true" ProgramUnitType="Package Body" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="PERFORM_FOR_ALL" SubclassSubObject="true" ProgramUnitType="Procedure" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="POPULATE_LIST_WITH_QUERY" SubclassSubObject="true" ProgramUnitType="Procedure" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="GENERAL_GROUP" SubclassSubObject="true" Type="RecordGroup"/>
+         <ObjectGroupChild Name="CHECK_IF_NULL" SubclassSubObject="true" ProgramUnitType="Function" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="FORM_PKG" SubclassSubObject="true" ProgramUnitType="Package Spec" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="FORM_PKG" SubclassSubObject="true" ProgramUnitType="Package Body" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="T" SubclassSubObject="true" ProgramUnitType="Package Spec" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="T" SubclassSubObject="true" ProgramUnitType="Package Body" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="T_DEBUG" SubclassSubObject="true" ProgramUnitType="Package Spec" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="T_DEBUG" SubclassSubObject="true" ProgramUnitType="Package Body" Type="ProgramUnit"/>
+         <ObjectGroupChild Name="STD_MENU_VIEW" SubclassSubObject="true" Type="Menu"/>
+      </ObjectGroup>
+   </FormModule>
+</Module>
